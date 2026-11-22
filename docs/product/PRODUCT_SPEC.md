@@ -212,7 +212,7 @@ recorded formally as ADRs in AC-002:
 
 | ID | Question | Blocks | Default if unanswered |
 |---|---|---|---|
-| Q1 | Confirm Apache-2.0 license | AC-006 | Apache-2.0 |
+| Q1 | ~~Confirm Apache-2.0 license~~ **Resolved (AC-006): Apache-2.0** | — | — |
 | Q2 | npm scope for published packages | AC-041 | Placeholder `@agentcontext/*` until confirmed |
 | Q3 | Is the deterministic oracle sufficient for "task quality measured", or are live model runs required? | AC-037/038 | Oracle required; live runs optional |
 | Q6 | Location of the roadmap PDF in the repo | AC-003 | Leave in repo root, excluded from git |

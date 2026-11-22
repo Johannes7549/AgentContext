@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "Tokenizer interface, fallback estimator and tokenizer registry",
+  "license": "Apache-2.0",
   "type": "module",
   "exports": {
     ".": {
