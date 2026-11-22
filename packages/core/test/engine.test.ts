@@ -281,7 +281,7 @@ describe("createEngine — retrieve and stats", () => {
           scope,
         )
       ).status,
-    ).toBe("INVALID_SELECTOR");
+    ).toBe("OK");
 
     storage.faults.corrupt = true;
     expect((await engine.retrieve({ contextId: id }, scope)).status).toBe("INTEGRITY_ERROR");

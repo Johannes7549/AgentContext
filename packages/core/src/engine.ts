@@ -1,3 +1,4 @@
+import { retrieveContext } from "@agentcontext/retrieval";
 import {
   type AgentContextEngine,
   AgentContextError,
@@ -52,6 +53,8 @@ export interface EngineConfig {
   randomBytes?: (size: number) => Uint8Array;
   /** Resolves `json:` locations during validation. */
   resolveJsonPath?: JsonPathResolver;
+  /** Hard cap on retrieved content size (bytes); defaults to the retrieval package default (1 MB). */
+  maxResponseBytes?: number;
 }
 
 export const DEFAULT_ENGINE_CONFIG: EngineConfig = {
@@ -286,73 +289,38 @@ export function createEngine(deps: EngineDependencies): AgentContextEngine {
   ): Promise<RetrievalResult> {
     const request = parseOrThrow(RetrievalRequestSchema, rawRequest, "retrieval request");
     const scope = parseOrThrow(RetrievalScopeSchema, rawScope, "scope");
-    const { contextId } = request;
     if (!storage) {
       return {
         status: "NOT_FOUND",
-        contextId,
+        contextId: request.contextId,
         message: "Recovery is unavailable: no storage is configured",
       };
     }
-    if (request.selector) {
-      return {
-        status: "INVALID_SELECTOR",
-        contextId,
-        message:
-          "Selective retrieval is not available yet; omit the selector to retrieve the full original",
-      };
+    const started = performance.now();
+    const result = await retrieveContext(storage, request, scope, {
+      tokenizer,
+      now: config.now,
+      ...(config.maxResponseBytes !== undefined
+        ? { maxResponseBytes: config.maxResponseBytes }
+        : {}),
+    });
+    if (result.status === "OK") {
+      await record(
+        {
+          contextId: request.contextId,
+          eventType: "retrieved",
+          strategy: "retrieval",
+          originalTokens: 0,
+          optimizedTokens: 0,
+          recoveredTokens: result.tokens.count,
+          tokenizer: info,
+          processingTimeMs: Math.round((performance.now() - started) * 100) / 100,
+          createdAt: config.now(),
+        },
+        scope.sessionId,
+      );
     }
-    const stored = await storage.getContext(contextId);
-    if (!stored) return { status: "NOT_FOUND", contextId, message: "Context not found" };
-    if (
-      stored.workspaceId !== scope.workspaceId ||
-      (scope.mode === "session" && stored.sessionId !== scope.sessionId)
-    ) {
-      return { status: "UNAUTHORIZED", contextId, message: "Context is outside the current scope" };
-    }
-    if (stored.expiresAt.getTime() <= config.now().getTime()) {
-      return { status: "EXPIRED", contextId, message: "Context has expired" };
-    }
-    let content: string;
-    try {
-      content = await storage.getOriginal(contextId);
-    } catch {
-      return {
-        status: "INTEGRITY_ERROR",
-        contextId,
-        message: "Stored content could not be verified",
-      };
-    }
-    if (sha256Hex(content) !== stored.contentHash) {
-      return {
-        status: "INTEGRITY_ERROR",
-        contextId,
-        message: "Stored content could not be verified",
-      };
-    }
-    const tokens = await countTokens(tokenizer, content);
-    if (request.maxTokens !== undefined && tokens.count > request.maxTokens) {
-      return {
-        status: "TOO_LARGE",
-        contextId,
-        message: `Content is ${tokens.count} tokens, above maxTokens ${request.maxTokens}`,
-      };
-    }
-    await record(
-      {
-        contextId,
-        eventType: "retrieved",
-        strategy: "retrieval",
-        originalTokens: 0,
-        optimizedTokens: 0,
-        recoveredTokens: tokens.count,
-        tokenizer: info,
-        processingTimeMs: 0,
-        createdAt: config.now(),
-      },
-      scope.sessionId,
-    );
-    return { status: "OK", contextId, content, truncated: false, tokens };
+    return result;
   }
 
   async function stats(
