@@ -1,7 +1,12 @@
 import { readFileSync } from "node:fs";
 import { createEngine } from "@agentcontext/core";
 import { CompressionResultSchema, type RetrievalScope } from "@agentcontext/shared";
-import { duplicateEliminator, jsonPruner, logCompressor } from "@agentcontext/strategies";
+import {
+  duplicateEliminator,
+  jsonPruner,
+  logCompressor,
+  sectionExtractor,
+} from "@agentcontext/strategies";
 import { FallbackEstimator } from "@agentcontext/tokenization";
 import { describe, expect, it } from "vitest";
 import { MemoryStorage } from "../../packages/core/test/helpers/memory-storage.js";
@@ -16,7 +21,7 @@ function engine() {
     storage,
     engine: createEngine({
       tokenizer: new FallbackEstimator(),
-      strategies: [jsonPruner, logCompressor, duplicateEliminator],
+      strategies: [jsonPruner, logCompressor, duplicateEliminator, sectionExtractor],
       storage,
     }),
   };
@@ -88,5 +93,25 @@ describe("strategies through the engine (generic validator applies)", () => {
       scope,
     );
     expect(logResult.strategy).toBe("log-compressor");
+  });
+
+  it("section-extractor: returns only the requested section (explicit selection bypasses size threshold)", async () => {
+    const { engine: e } = engine();
+    const appendix = Array.from(
+      { length: 120 },
+      (_, i) => `Appendix note ${i + 1}: background detail that is rarely needed.`,
+    ).join("\n");
+    const content = `${fixture("guide.md")}\n## Appendix\n\n${appendix}\n`;
+    const result = await e.optimize(
+      { content, source: "file:guide.md" },
+      { selection: { markdown: { sections: ["Configuration"] } }, minBenefitTokens: 0 },
+      scope,
+    );
+    expect(result.strategy).toBe("section-extractor");
+    expect(result.warnings).toEqual([]);
+    expect(result.content).toContain("Set allowed roots.");
+    expect(result.content).not.toContain("Run the installer.");
+    const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
+    expect(recovered.status === "OK" && recovered.content).toBe(content);
   });
 });

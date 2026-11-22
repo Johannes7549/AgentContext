@@ -11,6 +11,7 @@ export {
   MAX_SUPPORTED_DEPTH,
 } from "./json-pruner.js";
 export { DEFAULT_KEPT_LEVELS, logCompressor, messageKey } from "./log-compressor.js";
+export { sectionExtractor } from "./section-extractor.js";
 export {
   defineStrategy,
   describeRanges,
