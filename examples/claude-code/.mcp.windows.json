@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "agentcontext": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@agentcontext/mcp-server"],
+      "env": {
+        "AGENTCONTEXT_RETRIEVAL_SCOPE": "workspace",
+        "AGENTCONTEXT_LOG_LEVEL": "info"
+      }
+    }
+  }
+}

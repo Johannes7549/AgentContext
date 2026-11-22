@@ -1,0 +1,20 @@
+{
+  "name": "@agentcontext/examples",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Runnable AgentContext examples (tested in tests/e2e)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "basic-mcp-client": "node basic-mcp-client/client.mjs",
+    "custom-agent": "node custom-agent/agent.mjs"
+  },
+  "dependencies": {
+    "@agentcontext/core": "workspace:*",
+    "@agentcontext/storage": "workspace:*",
+    "@agentcontext/strategies": "workspace:*",
+    "@agentcontext/tokenization": "workspace:*",
+    "@agentcontext/mcp-server": "workspace:*",
+    "@modelcontextprotocol/client": "2.4.0"
+  }
+}

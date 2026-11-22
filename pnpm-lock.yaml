@@ -82,6 +82,27 @@ importers:
         specifier: workspace:*
         version: link:../packages/tokenization
 
+  examples:
+    dependencies:
+      '@agentcontext/core':
+        specifier: workspace:*
+        version: link:../packages/core
+      '@agentcontext/mcp-server':
+        specifier: workspace:*
+        version: link:../apps/mcp-server
+      '@agentcontext/storage':
+        specifier: workspace:*
+        version: link:../packages/storage
+      '@agentcontext/strategies':
+        specifier: workspace:*
+        version: link:../packages/strategies
+      '@agentcontext/tokenization':
+        specifier: workspace:*
+        version: link:../packages/tokenization
+      '@modelcontextprotocol/client':
+        specifier: 2.4.0
+        version: 2.4.0
+
   packages/core:
     dependencies:
       '@agentcontext/observability':
