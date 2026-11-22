@@ -213,8 +213,8 @@ recorded formally as ADRs in AC-002:
 | ID | Question | Blocks | Default if unanswered |
 |---|---|---|---|
 | Q1 | ~~Confirm Apache-2.0 license~~ **Resolved (AC-006): Apache-2.0** | — | — |
-| Q2 | npm scope for published packages | AC-041 | Placeholder `@agentcontext/*` until confirmed |
-| Q3 | Is the deterministic oracle sufficient for "task quality measured", or are live model runs required? | AC-037/038 | Oracle required; live runs optional |
+| Q2 | ~~npm scope for published packages~~ **Resolved: `@agentcontext/*`** (requires the free npm organization `agentcontext` before publishing) | — | — |
+| Q3 | ~~Is the deterministic oracle sufficient for "task quality measured"?~~ **Resolved: yes — deterministic oracle only for v0.1; live model runs (AC-038) deferred** | — | — |
 | Q6 | Location of the roadmap PDF in the repo | AC-003 | Leave in repo root, excluded from git |
 | Q7 | Will there be a GitHub remote? | AC-007 | CI validated syntactically until a remote exists |
 | Q8 | Default TTL and storage quota values | AC-026 | 7 days, 500 MB (to be confirmed) |
