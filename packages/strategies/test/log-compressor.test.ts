@@ -145,3 +145,25 @@ describe("log-compressor — validation", () => {
     expect(a.output).toEqual(b.output);
   });
 });
+
+describe("log-compressor — stack frames under level-less exception lines", () => {
+  it("keeps frames that follow an exception line even when the last explicit level is filtered", async () => {
+    const content = [
+      "2026-01-01T00:00:00Z INFO starting",
+      "2026-01-01T00:00:01Z INFO working",
+      "AssertionError: expected 1 to be 2",
+      "    at src/a.test.ts:42:19",
+      "    at run (src/runner.ts:10:5)",
+      "2026-01-01T00:00:02Z INFO done",
+    ].join("\n");
+    const { output, issues } = await run(logCompressor, content, "logs", {
+      selection: { logs: {} },
+    });
+    expect(issues).toEqual([]);
+    const lines = output.content.split("\n");
+    expect(lines).toContain("AssertionError: expected 1 to be 2");
+    expect(lines).toContain("    at src/a.test.ts:42:19");
+    expect(lines).toContain("    at run (src/runner.ts:10:5)");
+    expect(lines.some((l) => l.includes("INFO done"))).toBe(false);
+  });
+});

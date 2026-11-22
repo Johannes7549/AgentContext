@@ -54,7 +54,7 @@ interface LineInfo {
  */
 export const logCompressor = defineStrategy({
   name: "log-compressor",
-  version: "1.0.0",
+  version: "1.0.1",
   supports: (context) => context.contentType === "logs" && context.lines.count > 0,
   plan(context, _analysis, options): Plan {
     const policy = options.selection?.logs;
@@ -63,15 +63,19 @@ export const logCompressor = defineStrategy({
 
     const lines: LineInfo[] = [];
     let inherited: LogLevel | undefined;
+    let previous: LogLevel | undefined;
     for (let n = 1; n <= context.lines.count; n++) {
       const text = lineText(context.original, context.lines, n);
       const own = detectLogLevel(text);
       const error = isErrorLine(text);
       const frame = isStackFrameLine(text);
       if (own) inherited = own;
-      const level = error ? "error" : (own ?? inherited);
+      // Stack frames belong to the line above them (often a level-less exception line);
+      // other unlevelled lines continue the last explicit level.
+      const level: LogLevel | undefined = error ? "error" : (own ?? (frame ? previous : inherited));
       const kept = !keptLevels || level === undefined || keptLevels.has(level) || error;
       lines.push({ text, level, error, frame, kept });
+      previous = level;
     }
 
     // Occurrences of each groupable message among kept lines.
