@@ -1,6 +1,14 @@
 /**
- * @agentcontext/tokenization — Tokenizer interface, fallback estimator and tokenizer registry.
- *
- * Placeholder entry point created by AC-004. Real exports are added by later tasks.
+ * @agentcontext/tokenization — tokenizer adapters, the fallback estimator and
+ * a tokenizer registry (ADR-0003).
  */
 export const packageName = "@agentcontext/tokenization" as const;
+
+export { FallbackEstimator } from "./fallback-estimator.js";
+export {
+  countTokens,
+  createDefaultRegistry,
+  DEFAULT_TOKENIZER_ID,
+  TokenizerRegistry,
+  tokenizerInfo,
+} from "./registry.js";
