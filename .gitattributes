@@ -6,3 +6,7 @@
 *.jpg binary
 *.pdf binary
 *.db binary
+
+# Test fixtures must keep their exact bytes (CRLF, BOM, tabs).
+**/test/fixtures/** -text
+benchmarks/datasets/** -text

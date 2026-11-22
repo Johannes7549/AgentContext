@@ -1,6 +1,6 @@
 /**
- * @agentcontext/core — Framework-independent optimization pipeline.
- *
- * Placeholder entry point created by AC-004. Real exports are added by later tasks.
+ * @agentcontext/core — framework-independent optimization pipeline.
  */
 export const packageName = "@agentcontext/core" as const;
+
+export { type ContentTypeDetector, type NormalizeOptions, normalize } from "./normalizer.js";

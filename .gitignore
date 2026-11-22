@@ -32,3 +32,7 @@ Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+# Never ignore test fixtures or benchmark datasets (they may be .log, .db, etc.)
+!**/test/fixtures/**
+!benchmarks/datasets/**

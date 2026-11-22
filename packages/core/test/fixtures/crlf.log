@@ -1,0 +1,4 @@
+2026-11-22T10:00:00Z INFO server started
+2026-11-22T10:00:01Z WARN slow request id=1
+2026-11-22T10:00:02Z ERROR connection refused
+    at connect (net.js:10:5)

@@ -12,4 +12,5 @@ export * from "./result.js";
 export * from "./results.js";
 export * from "./retrieval.js";
 export * from "./segments.js";
+export * from "./text.js";
 export * from "./validation.js";
