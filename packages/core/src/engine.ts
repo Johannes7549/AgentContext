@@ -1,3 +1,4 @@
+import { aggregateStats } from "@agentcontext/observability";
 import { retrieveContext } from "@agentcontext/retrieval";
 import {
   type AgentContextEngine,
@@ -331,25 +332,10 @@ export function createEngine(deps: EngineDependencies): AgentContextEngine {
         (filter.since === undefined || e.createdAt.getTime() >= filter.since.getTime()) &&
         (filter.sessionId === undefined || sessionId === filter.sessionId),
     );
-    const sum = (pick: (e: OptimizationEvent) => number) =>
-      selected.reduce((total, { event: e }) => total + pick(e), 0);
-    const count = (type: OptimizationEvent["eventType"]) =>
-      selected.filter(({ event: e }) => e.eventType === type).length;
-    const counted = (e: OptimizationEvent) => e.eventType !== "storage_failed";
-    const originalTokens = sum((e) => (counted(e) ? e.originalTokens : 0));
-    const optimizedTokens = sum((e) => (counted(e) ? e.optimizedTokens : 0));
-    const recoveredTokens = sum((e) => e.recoveredTokens);
-    return {
-      optimizations: count("optimized"),
-      skipped: count("skipped"),
-      fallbacks: count("fallback"),
-      retrievals: count("retrieved"),
-      originalTokens,
-      optimizedTokens,
-      recoveredTokens,
-      netSavedTokens: originalTokens - (optimizedTokens + recoveredTokens),
-      tokenizer: info,
-    };
+    return aggregateStats(
+      selected.map((r) => r.event),
+      info,
+    );
   }
 
   return { optimize, retrieve, stats };
