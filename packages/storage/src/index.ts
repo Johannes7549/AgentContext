@@ -4,6 +4,7 @@
  */
 export const packageName = "@agentcontext/storage" as const;
 
+export { type BlobInfo, BlobStore } from "./blob-store.js";
 export { type Database, migrate, openDatabase, transaction } from "./database.js";
 export {
   type ContextRecord,
