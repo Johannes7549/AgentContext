@@ -8,13 +8,28 @@
     },
     "typecheck": {
       "dependsOn": ["^build"],
-      "inputs": ["src/**", "test/**", "package.json", "tsconfig.json"],
+      "inputs": [
+        "src/**",
+        "test/**",
+        "package.json",
+        "tsconfig.json",
+        "tsconfig.test.json",
+        "vitest.config.ts",
+        "$TURBO_ROOT$/tsconfig.base.json"
+      ],
       "outputs": []
     },
     "test": {
-      "dependsOn": ["^build"],
-      "inputs": ["src/**", "test/**", "package.json", "vitest.config.*"],
-      "outputs": ["coverage/**"]
+      "inputs": [
+        "src/**",
+        "test/**",
+        "package.json",
+        "vitest.config.ts",
+        "$TURBO_ROOT$/vitest.shared.ts",
+        "$TURBO_ROOT$/packages/*/src/**",
+        "$TURBO_ROOT$/apps/*/src/**"
+      ],
+      "outputs": []
     }
   }
 }

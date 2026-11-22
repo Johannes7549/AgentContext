@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@agentcontext/shared": ["../packages/shared/src/index.ts"],
+      "@agentcontext/tokenization": ["../packages/tokenization/src/index.ts"],
+      "@agentcontext/strategies": ["../packages/strategies/src/index.ts"],
+      "@agentcontext/storage": ["../packages/storage/src/index.ts"],
+      "@agentcontext/retrieval": ["../packages/retrieval/src/index.ts"],
+      "@agentcontext/observability": ["../packages/observability/src/index.ts"],
+      "@agentcontext/core": ["../packages/core/src/index.ts"],
+      "@agentcontext/mcp-server": ["../apps/mcp-server/src/index.ts"]
+    }
+  },
+  "include": ["integration", "e2e", "../vitest.config.ts", "../vitest.shared.ts"]
+}
