@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { createEngine } from "@agentcontext/core";
 import { CompressionResultSchema, type RetrievalScope } from "@agentcontext/shared";
 import {
+  codeExtractor,
   duplicateEliminator,
   jsonPruner,
   logCompressor,
@@ -21,7 +22,7 @@ function engine() {
     storage,
     engine: createEngine({
       tokenizer: new FallbackEstimator(),
-      strategies: [jsonPruner, logCompressor, duplicateEliminator, sectionExtractor],
+      strategies: [jsonPruner, logCompressor, duplicateEliminator, sectionExtractor, codeExtractor],
       storage,
     }),
   };
@@ -111,6 +112,21 @@ describe("strategies through the engine (generic validator applies)", () => {
     expect(result.warnings).toEqual([]);
     expect(result.content).toContain("Set allowed roots.");
     expect(result.content).not.toContain("Run the installer.");
+    const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
+    expect(recovered.status === "OK" && recovered.content).toBe(content);
+  });
+
+  it("code-extractor: numbered line ranges pass the generic validator", async () => {
+    const { engine: e } = engine();
+    const content = fixture("module.ts");
+    const result = await e.optimize(
+      { content, source: "file:module.ts" },
+      { selection: { lines: { ranges: [{ start: 20, end: 22 }] } }, minBenefitTokens: 0 },
+      scope,
+    );
+    expect(result.strategy).toBe("code-extractor");
+    expect(result.warnings).toEqual([]);
+    expect(result.content).toContain("21 | function f21() { return 21; }");
     const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
     expect(recovered.status === "OK" && recovered.content).toBe(content);
   });

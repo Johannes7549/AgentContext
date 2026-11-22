@@ -16,11 +16,11 @@ Format: context → options → decision → consequences.
 | [0006](0006-ownership-model.md) | Ownership model: workspace + session scope | Accepted |
 | [0007](0007-test-layout.md) | Test layout: co-located unit tests, root integration/e2e | Accepted |
 | [0008](0008-typescript-version.md) | TypeScript version (7.x, validated in AC-003) | Accepted |
+| [0009](0009-code-strategy-diff-text.md) | Code strategy works on supplied text; never invokes git | Accepted |
 
-Two further approved planning decisions will receive ADRs in the tasks that
-implement them:
+One further approved planning decision will receive an ADR in the task that
+implements it:
 
-- Code strategy parses supplied unified-diff text and never invokes `git` — AC-020.
 - Windows command adapter refuses `.cmd`/`.bat` targets instead of using a shell — AC-034.
 
-Both are already recorded in [PRODUCT_SPEC.md §11](../product/PRODUCT_SPEC.md#11-approved-planning-decisions).
+It is already recorded in [PRODUCT_SPEC.md §11](../product/PRODUCT_SPEC.md#11-approved-planning-decisions).

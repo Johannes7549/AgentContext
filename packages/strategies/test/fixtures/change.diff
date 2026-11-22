@@ -1,0 +1,32 @@
+diff --git a/src/users.ts b/src/users.ts
+index 1111111..2222222 100644
+--- a/src/users.ts
++++ b/src/users.ts
+@@ -1,19 +1,19 @@
+ const line1 = 1;
+ const line2 = 2;
+ const line3 = 3;
+ const line4 = 4;
+ const line5 = 5;
+ const line6 = 6;
+ const line7 = 7;
+ const line8 = 8;
+-export function find(id) {
++export function find(id: string) {
+ const tail1 = 1;
+ const tail2 = 2;
+ const tail3 = 3;
+ const tail4 = 4;
+ const tail5 = 5;
+ const tail6 = 6;
+ const tail7 = 7;
+ const tail8 = 8;
+ const tail9 = 9;
+ const tail10 = 10;
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # Title
++New line
+ end

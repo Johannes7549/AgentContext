@@ -4,6 +4,7 @@
  */
 export const packageName = "@agentcontext/strategies" as const;
 
+export { codeExtractor, DIFF_CONTEXT_LINES } from "./code-extractor.js";
 export { duplicateEliminator, MIN_DUPLICATE_CHARS } from "./duplicate-eliminator.js";
 export {
   jsonPruner,
