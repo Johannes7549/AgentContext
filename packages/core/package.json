@@ -1,0 +1,28 @@
+{
+  "name": "@agentcontext/core",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Framework-independent optimization pipeline",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@agentcontext/shared": "workspace:*",
+    "@agentcontext/tokenization": "workspace:*",
+    "@agentcontext/strategies": "workspace:*",
+    "@agentcontext/storage": "workspace:*",
+    "@agentcontext/retrieval": "workspace:*",
+    "@agentcontext/observability": "workspace:*"
+  }
+}

@@ -24,6 +24,86 @@ importers:
         specifier: 5.1.1
         version: 5.1.1(@types/node@22.20.5)(vite@8.3.8(@types/node@22.20.5))
 
+  apps/mcp-server:
+    dependencies:
+      '@agentcontext/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@agentcontext/observability':
+        specifier: workspace:*
+        version: link:../../packages/observability
+      '@agentcontext/retrieval':
+        specifier: workspace:*
+        version: link:../../packages/retrieval
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      '@agentcontext/storage':
+        specifier: workspace:*
+        version: link:../../packages/storage
+      '@agentcontext/strategies':
+        specifier: workspace:*
+        version: link:../../packages/strategies
+      '@agentcontext/tokenization':
+        specifier: workspace:*
+        version: link:../../packages/tokenization
+
+  packages/core:
+    dependencies:
+      '@agentcontext/observability':
+        specifier: workspace:*
+        version: link:../observability
+      '@agentcontext/retrieval':
+        specifier: workspace:*
+        version: link:../retrieval
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../shared
+      '@agentcontext/storage':
+        specifier: workspace:*
+        version: link:../storage
+      '@agentcontext/strategies':
+        specifier: workspace:*
+        version: link:../strategies
+      '@agentcontext/tokenization':
+        specifier: workspace:*
+        version: link:../tokenization
+
+  packages/observability:
+    dependencies:
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/retrieval:
+    dependencies:
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../shared
+      '@agentcontext/storage':
+        specifier: workspace:*
+        version: link:../storage
+
+  packages/shared: {}
+
+  packages/storage:
+    dependencies:
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/strategies:
+    dependencies:
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/tokenization:
+    dependencies:
+      '@agentcontext/shared':
+        specifier: workspace:*
+        version: link:../shared
+
 packages:
 
   '@biomejs/biome@2.6.8':

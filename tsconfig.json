@@ -1,5 +1,30 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./packages/shared"
+    },
+    {
+      "path": "./packages/tokenization"
+    },
+    {
+      "path": "./packages/strategies"
+    },
+    {
+      "path": "./packages/storage"
+    },
+    {
+      "path": "./packages/retrieval"
+    },
+    {
+      "path": "./packages/observability"
+    },
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./apps/mcp-server"
+    }
+  ]
 }

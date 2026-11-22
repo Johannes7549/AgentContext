@@ -8,6 +8,28 @@
   "files": {
     "ignoreUnknown": true
   },
+  "overrides": [
+    {
+      "includes": ["packages/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["@modelcontextprotocol/*", "@modelcontextprotocol/**"],
+                    "message": "ADR-0001: only apps/mcp-server may import the MCP SDK. Packages must stay MCP-independent."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "formatter": {
     "enabled": true,
     "indentStyle": "space",

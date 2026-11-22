@@ -1,0 +1,23 @@
+{
+  "name": "@agentcontext/storage",
+  "version": "0.0.0",
+  "private": true,
+  "description": "node:sqlite metadata store and content-addressed blob store",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@agentcontext/shared": "workspace:*"
+  }
+}
