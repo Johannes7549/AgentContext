@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { createEngine } from "@agentcontext/core";
 import { CompressionResultSchema, type RetrievalScope } from "@agentcontext/shared";
-import { jsonPruner } from "@agentcontext/strategies";
+import { jsonPruner, logCompressor } from "@agentcontext/strategies";
 import { FallbackEstimator } from "@agentcontext/tokenization";
 import { describe, expect, it } from "vitest";
 import { MemoryStorage } from "../../packages/core/test/helpers/memory-storage.js";
@@ -14,7 +14,11 @@ function engine() {
   const storage = new MemoryStorage();
   return {
     storage,
-    engine: createEngine({ tokenizer: new FallbackEstimator(), strategies: [jsonPruner], storage }),
+    engine: createEngine({
+      tokenizer: new FallbackEstimator(),
+      strategies: [jsonPruner, logCompressor],
+      storage,
+    }),
   };
 }
 
@@ -40,6 +44,19 @@ describe("strategies through the engine (generic validator applies)", () => {
         ],
       },
     });
+    const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
+    expect(recovered.status === "OK" && recovered.content).toBe(content);
+  });
+
+  it("log-compressor: groups repeats, keeps errors, recovers the exact original", async () => {
+    const { engine: e } = engine();
+    const content = fixture("terminal.log");
+    const result = await e.optimize({ content, source: "command:pnpm test" }, {}, scope);
+    expect(CompressionResultSchema.safeParse(result).success).toBe(true);
+    expect(result.strategy).toBe("log-compressor");
+    expect(result.warnings).toEqual([]);
+    expect(result.metrics.optimizedTokens).toBeLessThan(result.metrics.originalTokens);
+    expect(result.content).toContain("TypeError: Cannot read properties of undefined");
     const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
     expect(recovered.status === "OK" && recovered.content).toBe(content);
   });
