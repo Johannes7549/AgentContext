@@ -34,7 +34,7 @@ const InputSchema = z.object({
   options: CompressionOptionsSchema.optional(),
 });
 
-const OutputSchema = z.object({
+export const OptimizeOutputSchema = z.object({
   contextId: z.string().nullable(),
   recoveryAvailable: z.boolean(),
   strategy: z.string(),
@@ -58,7 +58,7 @@ export const registerOptimizeContext: Registrar = (server, runtime) => {
       title: "Optimize context",
       description: OPTIMIZE_CONTEXT_DESCRIPTION,
       inputSchema: InputSchema,
-      outputSchema: OutputSchema,
+      outputSchema: OptimizeOutputSchema,
       annotations: { readOnlyHint: true, openWorldHint: false, idempotentHint: false },
     },
     async (args): Promise<ToolResult> => {

@@ -65,6 +65,7 @@ describe("AgentContext MCP server over stdio (official client)", () => {
     expect(tools.tools.map((t) => t.name).sort()).toEqual([
       "get_optimization_stats",
       "optimize_context",
+      "read_file",
       "retrieve_context",
     ]);
     for (const tool of tools.tools) {

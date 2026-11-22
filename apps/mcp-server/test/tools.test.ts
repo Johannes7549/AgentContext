@@ -54,6 +54,7 @@ describe("tools/list", () => {
     expect(tools.map((t) => t.name)).toEqual([
       "optimize_context",
       "retrieve_context",
+      "read_file",
       "get_optimization_stats",
     ]);
     for (const tool of tools) {

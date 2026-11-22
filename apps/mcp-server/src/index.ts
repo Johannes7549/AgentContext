@@ -5,6 +5,12 @@
 export const packageName = "@agentcontext/mcp-server" as const;
 
 export {
+  contentTypeFor,
+  FileAdapter,
+  type FileAdapterOptions,
+  type FileReadResult,
+} from "./adapters/file-adapter.js";
+export {
   ConfigSchema,
   type ConfigSources,
   defaultConfig,
@@ -27,6 +33,7 @@ export {
   formatStats,
   GUIDELINES,
   OPTIMIZE_CONTEXT_DESCRIPTION,
+  READ_FILE_DESCRIPTION,
   RETRIEVE_CONTEXT_DESCRIPTION,
   STATS_DESCRIPTION,
 } from "./tools/index.js";
