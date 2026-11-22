@@ -15,3 +15,10 @@ export {
   selectStrategy,
 } from "./selector.js";
 export { StrategyRegistry } from "./strategy-registry.js";
+export {
+  type JsonPathResolver,
+  type ValidationInput,
+  type ValidationReport,
+  type ValidatorConfig,
+  validateOutput,
+} from "./validator.js";
