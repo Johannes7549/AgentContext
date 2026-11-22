@@ -5,6 +5,13 @@
 export const packageName = "@agentcontext/mcp-server" as const;
 
 export {
+  CommandAdapter,
+  type CommandAdapterOptions,
+  type CommandRequest,
+  type CommandResult,
+  filterEnv,
+} from "./adapters/command-adapter.js";
+export {
   contentTypeFor,
   FileAdapter,
   type FileAdapterOptions,
@@ -27,7 +34,9 @@ export {
 export { createServer, type Registrar, type StartOptions, startStdioServer } from "./server.js";
 export {
   collectStats,
+  commandTranscript,
   defaultRegistrars,
+  EXECUTE_COMMAND_DESCRIPTION,
   formatOptimizeResult,
   formatRetrieveResult,
   formatStats,

@@ -17,10 +17,5 @@ Format: context → options → decision → consequences.
 | [0007](0007-test-layout.md) | Test layout: co-located unit tests, root integration/e2e | Accepted |
 | [0008](0008-typescript-version.md) | TypeScript version (7.x, validated in AC-003) | Accepted |
 | [0009](0009-code-strategy-diff-text.md) | Code strategy works on supplied text; never invokes git | Accepted |
+| [0010](0010-command-adapter-no-shell.md) | Command adapter never uses a shell; Windows script shims refused | Accepted |
 
-One further approved planning decision will receive an ADR in the task that
-implements it:
-
-- Windows command adapter refuses `.cmd`/`.bat` targets instead of using a shell — AC-034.
-
-It is already recorded in [PRODUCT_SPEC.md §11](../product/PRODUCT_SPEC.md#11-approved-planning-decisions).
