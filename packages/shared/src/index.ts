@@ -1,6 +1,15 @@
 /**
- * @agentcontext/shared — Shared domain types, schemas, errors, JSONPath subset and hashing utilities.
- *
- * Placeholder entry point created by AC-004. Real exports are added by later tasks.
+ * @agentcontext/shared — domain types, Zod schemas, typed errors and shared
+ * utilities. Implements the frozen contracts in docs/architecture/CONTRACTS.md.
  */
 export const packageName = "@agentcontext/shared" as const;
+
+export * from "./content.js";
+export * from "./domain.js";
+export * from "./errors.js";
+export * from "./input.js";
+export * from "./result.js";
+export * from "./results.js";
+export * from "./retrieval.js";
+export * from "./segments.js";
+export * from "./validation.js";
