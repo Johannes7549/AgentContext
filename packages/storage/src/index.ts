@@ -13,3 +13,8 @@ export {
   type VariantRecord,
 } from "./metadata-store.js";
 export { MIGRATIONS, type Migration } from "./migrations.js";
+export {
+  DEFAULT_INLINE_THRESHOLD_BYTES,
+  SqliteStorage,
+  type SqliteStorageOptions,
+} from "./sqlite-storage.js";
