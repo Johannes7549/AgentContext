@@ -14,7 +14,10 @@ export {
 } from "./metadata-store.js";
 export { MIGRATIONS, type Migration } from "./migrations.js";
 export {
+  type CleanupReport,
   DEFAULT_INLINE_THRESHOLD_BYTES,
+  DEFAULT_ORPHAN_GRACE_MS,
+  DEFAULT_QUOTA_BYTES,
   SqliteStorage,
   type SqliteStorageOptions,
 } from "./sqlite-storage.js";
