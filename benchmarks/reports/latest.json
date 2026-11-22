@@ -1,0 +1,398 @@
+{
+  "tool": "agentcontext",
+  "version": "0.1.0",
+  "generatedAt": "2026-11-22T22:35:43.051Z",
+  "environment": {
+    "node": "v26.13.1",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "tokenizer": {
+    "id": "fallback-estimator",
+    "version": "1.0.0",
+    "isExact": false
+  },
+  "iterations": 10,
+  "scenarios": [
+    {
+      "id": "terminal-large",
+      "title": "Large test run (safe policy)",
+      "task": "Identify the failing tests, their root errors and source locations.",
+      "strategy": "log-compressor",
+      "baselineTokens": 22049,
+      "optimizedTokens": 2734,
+      "recoveredTokens": 0,
+      "totalTokens": 2734,
+      "reductionPct": 87.6,
+      "retrievalCalls": 0,
+      "facts": [
+        {
+          "id": "fail-1",
+          "passed": true
+        },
+        {
+          "id": "error-1",
+          "passed": true
+        },
+        {
+          "id": "loc-1",
+          "passed": true
+        },
+        {
+          "id": "fail-2",
+          "passed": true
+        },
+        {
+          "id": "error-2",
+          "passed": true
+        },
+        {
+          "id": "loc-2",
+          "passed": true
+        },
+        {
+          "id": "summary",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 4,
+      "segmentsVerified": 4,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 9.8,
+        "p95": 28.7,
+        "samples": 10
+      }
+    },
+    {
+      "id": "terminal-large-levels",
+      "title": "Large test run (warn+error levels, one fact needs recovery)",
+      "task": "Identify the failing tests and also report the slowest test.",
+      "strategy": "log-compressor",
+      "baselineTokens": 22049,
+      "optimizedTokens": 1085,
+      "recoveredTokens": 40,
+      "totalTokens": 1125,
+      "reductionPct": 94.9,
+      "retrievalCalls": 1,
+      "facts": [
+        {
+          "id": "fail-1",
+          "passed": true
+        },
+        {
+          "id": "error-1",
+          "passed": true
+        },
+        {
+          "id": "loc-1",
+          "passed": true
+        },
+        {
+          "id": "fail-2",
+          "passed": true
+        },
+        {
+          "id": "error-2",
+          "passed": true
+        },
+        {
+          "id": "loc-2",
+          "passed": true
+        },
+        {
+          "id": "summary",
+          "passed": true
+        },
+        {
+          "id": "slowest",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 15,
+      "segmentsVerified": 15,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 8,
+        "p95": 10.9,
+        "samples": 10
+      }
+    },
+    {
+      "id": "api-responses",
+      "title": "Large API response (field selection)",
+      "task": "Report the email and plan of customers cus_0042 and cus_0137.",
+      "strategy": "json-pruner",
+      "baselineTokens": 42192,
+      "optimizedTokens": 7902,
+      "recoveredTokens": 0,
+      "totalTokens": 7902,
+      "reductionPct": 81.3,
+      "retrievalCalls": 0,
+      "facts": [
+        {
+          "id": "c42",
+          "passed": true
+        },
+        {
+          "id": "c137",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 1002,
+      "segmentsVerified": 1002,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 25.4,
+        "p95": 40.6,
+        "samples": 10
+      }
+    },
+    {
+      "id": "duplicate-heavy",
+      "title": "Incident digest with repeated boilerplate",
+      "task": "List the unique events and how often the standard disclaimer appears.",
+      "strategy": "duplicate-eliminator",
+      "baselineTokens": 2079,
+      "optimizedTokens": 1107,
+      "recoveredTokens": 0,
+      "totalTokens": 1107,
+      "reductionPct": 46.8,
+      "retrievalCalls": 0,
+      "facts": [
+        {
+          "id": "event-1",
+          "passed": true
+        },
+        {
+          "id": "event-2",
+          "passed": true
+        },
+        {
+          "id": "event-3",
+          "passed": true
+        },
+        {
+          "id": "event-4",
+          "passed": true
+        },
+        {
+          "id": "event-5",
+          "passed": true
+        },
+        {
+          "id": "event-6",
+          "passed": true
+        },
+        {
+          "id": "event-7",
+          "passed": true
+        },
+        {
+          "id": "event-8",
+          "passed": true
+        },
+        {
+          "id": "event-9",
+          "passed": true
+        },
+        {
+          "id": "event-10",
+          "passed": true
+        },
+        {
+          "id": "event-11",
+          "passed": true
+        },
+        {
+          "id": "event-12",
+          "passed": true
+        },
+        {
+          "id": "disclaimer-count",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 3,
+      "segmentsVerified": 3,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 1.6,
+        "p95": 2.3,
+        "samples": 10
+      }
+    },
+    {
+      "id": "documentation",
+      "title": "Long handbook (section selection, one fact needs recovery)",
+      "task": "What is the default port, how do you fix EACCES at startup, and which Node version is required?",
+      "strategy": "section-extractor",
+      "baselineTokens": 10425,
+      "optimizedTokens": 1367,
+      "recoveredTokens": 33,
+      "totalTokens": 1400,
+      "reductionPct": 86.6,
+      "retrievalCalls": 1,
+      "facts": [
+        {
+          "id": "port",
+          "passed": true
+        },
+        {
+          "id": "eacces",
+          "passed": true
+        },
+        {
+          "id": "node",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 26,
+      "segmentsVerified": 26,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 3,
+        "p95": 5.6,
+        "samples": 10
+      }
+    },
+    {
+      "id": "source-code",
+      "title": "Large module (line range around a known function)",
+      "task": "Explain how calculateInvoiceTotal computes tax.",
+      "strategy": "code-extractor",
+      "baselineTokens": 5376,
+      "optimizedTokens": 231,
+      "recoveredTokens": 0,
+      "totalTokens": 231,
+      "reductionPct": 95.7,
+      "retrievalCalls": 0,
+      "facts": [
+        {
+          "id": "signature",
+          "passed": true
+        },
+        {
+          "id": "tax",
+          "passed": true
+        },
+        {
+          "id": "return",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 2,
+      "segmentsVerified": 2,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 2.5,
+        "p95": 3.7,
+        "samples": 10
+      }
+    },
+    {
+      "id": "source-diff",
+      "title": "Multi-file diff with wide context",
+      "task": "Summarize every change in the diff.",
+      "strategy": "code-extractor",
+      "baselineTokens": 2496,
+      "optimizedTokens": 1025,
+      "recoveredTokens": 0,
+      "totalTokens": 1025,
+      "reductionPct": 58.9,
+      "retrievalCalls": 0,
+      "facts": [
+        {
+          "id": "invoice",
+          "passed": true
+        },
+        {
+          "id": "rate",
+          "passed": true
+        },
+        {
+          "id": "session",
+          "passed": true
+        },
+        {
+          "id": "route",
+          "passed": true
+        }
+      ],
+      "accuracyPct": 100,
+      "taskSuccess": true,
+      "omittedSegments": 8,
+      "segmentsVerified": 8,
+      "unrecoverable": 0,
+      "warnings": [],
+      "latencyMs": {
+        "p50": 1.8,
+        "p95": 3,
+        "samples": 10
+      }
+    }
+  ],
+  "summary": {
+    "scenarios": 7,
+    "medianReductionPct": 86.6,
+    "extractionAccuracyPct": 100,
+    "taskSuccessRatePct": 100,
+    "recoveryIntegrityPct": 100,
+    "unrecoverableOmissions": 0,
+    "latencyMs": {
+      "p50": 3,
+      "p95": 40.6
+    }
+  },
+  "targets": [
+    {
+      "name": "Median input reduction (incl. recovery)",
+      "target": ">= 40%",
+      "actual": "86.6%",
+      "met": true
+    },
+    {
+      "name": "Extraction accuracy",
+      "target": ">= 95%",
+      "actual": "100%",
+      "met": true
+    },
+    {
+      "name": "Recovery integrity",
+      "target": "100%",
+      "actual": "100%",
+      "met": true
+    },
+    {
+      "name": "Unrecoverable omissions",
+      "target": "0",
+      "actual": "0",
+      "met": true
+    }
+  ],
+  "limitations": [
+    "Token counts use the deterministic fallback estimator, not a provider tokenizer; they are estimates.",
+    "Task success is measured by a deterministic oracle (required facts present in what the agent saw), not by a live model.",
+    "Retrieval calls are scripted per scenario to model what an agent would request; real agents may retrieve more or less.",
+    "Datasets are synthetic and generated deterministically; real-world outputs vary.",
+    "Latency covers optimization in-process (including local storage) on the machine that ran the benchmark."
+  ]
+}

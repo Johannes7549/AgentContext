@@ -20,7 +20,8 @@
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
-    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "bench": "turbo run build --filter=@agentcontext/benchmarks... --output-logs=errors-only && node benchmarks/dist/run.js"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.8",

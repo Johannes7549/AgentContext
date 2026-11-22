@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!**/test/fixtures", "!benchmarks/datasets"]
+    "includes": ["**", "!**/test/fixtures", "!benchmarks/datasets", "!benchmarks/reports"]
   },
   "overrides": [
     {
