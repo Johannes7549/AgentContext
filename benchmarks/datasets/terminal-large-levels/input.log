@@ -1,0 +1,1028 @@
+> app@1.0.0 test
+> vitest run
+
+ RUN  v5.1.1 /work/app
+
+2026-11-23T10:00:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:06Z INFO [http] GET /health 200 2ms
+ ✓ src/module001.test.ts (11 tests) 10ms
+2026-11-23T10:00:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:13Z INFO [http] GET /health 200 2ms
+ ✓ src/module002.test.ts (10 tests) 98ms
+2026-11-23T10:00:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:20Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module003.test.ts (14 tests) 35ms
+2026-11-23T10:00:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:27Z INFO [http] GET /health 200 2ms
+ ✓ src/module004.test.ts (11 tests) 74ms
+2026-11-23T10:00:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:34Z INFO [http] GET /health 200 2ms
+ ✓ src/module005.test.ts (9 tests) 99ms
+2026-11-23T10:00:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:41Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module006.test.ts (9 tests) 53ms
+2026-11-23T10:00:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:48Z INFO [http] GET /health 200 2ms
+ ✓ src/module007.test.ts (6 tests) 46ms
+2026-11-23T10:00:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:55Z INFO [http] GET /health 200 2ms
+ ✓ src/module008.test.ts (7 tests) 23ms
+2026-11-23T10:00:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:00:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:02Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module009.test.ts (9 tests) 16ms
+2026-11-23T10:01:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:09Z INFO [http] GET /health 200 2ms
+2026-11-23T10:01:10Z WARN [cache] eviction rate high: 3.9%
+ ✓ src/module010.test.ts (12 tests) 35ms
+2026-11-23T10:01:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:17Z INFO [http] GET /health 200 2ms
+ ✓ src/module011.test.ts (6 tests) 13ms
+2026-11-23T10:01:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:24Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module012.test.ts (9 tests) 63ms
+2026-11-23T10:01:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:31Z INFO [http] GET /health 200 2ms
+ ✓ src/module013.test.ts (12 tests) 36ms
+2026-11-23T10:01:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:38Z INFO [http] GET /health 200 2ms
+ ✓ src/module014.test.ts (7 tests) 69ms
+2026-11-23T10:01:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:45Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module015.test.ts (10 tests) 78ms
+2026-11-23T10:01:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:52Z INFO [http] GET /health 200 2ms
+ ✓ src/module016.test.ts (6 tests) 74ms
+2026-11-23T10:01:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:01:59Z INFO [http] GET /health 200 2ms
+ ✓ src/module017.test.ts (9 tests) 79ms
+2026-11-23T10:02:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:06Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module018.test.ts (14 tests) 31ms
+2026-11-23T10:02:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:13Z INFO [http] GET /health 200 2ms
+ ✓ src/module019.test.ts (12 tests) 23ms
+2026-11-23T10:02:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:20Z INFO [http] GET /health 200 2ms
+2026-11-23T10:02:21Z WARN [cache] eviction rate high: 3.2%
+ ✓ src/module020.test.ts (9 tests) 32ms
+2026-11-23T10:02:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:28Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module021.test.ts (6 tests) 75ms
+2026-11-23T10:02:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:35Z INFO [http] GET /health 200 2ms
+ ✓ src/module022.test.ts (10 tests) 21ms
+2026-11-23T10:02:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:42Z INFO [http] GET /health 200 2ms
+ ✓ src/module023.test.ts (7 tests) 14ms
+2026-11-23T10:02:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:49Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module024.test.ts (11 tests) 87ms
+2026-11-23T10:02:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:56Z INFO [http] GET /health 200 2ms
+ ✓ src/module025.test.ts (7 tests) 99ms
+2026-11-23T10:02:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:02:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:03Z INFO [http] GET /health 200 2ms
+ ✓ src/module026.test.ts (12 tests) 46ms
+2026-11-23T10:03:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:10Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module027.test.ts (8 tests) 70ms
+2026-11-23T10:03:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:17Z INFO [http] GET /health 200 2ms
+ ✓ src/module028.test.ts (14 tests) 93ms
+2026-11-23T10:03:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:24Z INFO [http] GET /health 200 2ms
+ ✓ src/module029.test.ts (11 tests) 92ms
+2026-11-23T10:03:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:31Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+2026-11-23T10:03:32Z WARN [cache] eviction rate high: 8.3%
+ ✓ src/module030.test.ts (14 tests) 20ms
+2026-11-23T10:03:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:39Z INFO [http] GET /health 200 2ms
+ ✓ src/module031.test.ts (5 tests) 88ms
+2026-11-23T10:03:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:46Z INFO [http] GET /health 200 2ms
+ ✓ src/module032.test.ts (7 tests) 89ms
+2026-11-23T10:03:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:53Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module033.test.ts (10 tests) 94ms
+2026-11-23T10:03:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:03:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:00Z INFO [http] GET /health 200 2ms
+ ✓ src/module034.test.ts (12 tests) 24ms
+2026-11-23T10:04:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:07Z INFO [http] GET /health 200 2ms
+ ✓ src/module035.test.ts (11 tests) 95ms
+2026-11-23T10:04:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:14Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module036.test.ts (6 tests) 98ms
+2026-11-23T10:04:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:21Z INFO [http] GET /health 200 2ms
+ ✓ src/module037.test.ts (6 tests) 44ms
+2026-11-23T10:04:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:28Z INFO [http] GET /health 200 2ms
+ ✓ src/module038.test.ts (6 tests) 46ms
+2026-11-23T10:04:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:35Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module039.test.ts (8 tests) 69ms
+2026-11-23T10:04:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:42Z INFO [http] GET /health 200 2ms
+2026-11-23T10:04:43Z WARN [cache] eviction rate high: 5.1%
+ ✓ src/module040.test.ts (10 tests) 16ms
+2026-11-23T10:04:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:50Z INFO [http] GET /health 200 2ms
+ ✓ src/module041.test.ts (13 tests) 86ms
+2026-11-23T10:04:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:57Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module042.test.ts (7 tests) 24ms
+2026-11-23T10:04:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:04:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:04Z INFO [http] GET /health 200 2ms
+ ✓ src/module043.test.ts (8 tests) 90ms
+2026-11-23T10:05:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:11Z INFO [http] GET /health 200 2ms
+ ✓ src/module044.test.ts (7 tests) 22ms
+2026-11-23T10:05:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:18Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module045.test.ts (11 tests) 59ms
+2026-11-23T10:05:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:25Z INFO [http] GET /health 200 2ms
+ ✓ src/module046.test.ts (8 tests) 20ms
+2026-11-23T10:05:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:32Z INFO [http] GET /health 200 2ms
+ ✓ src/module047.test.ts (6 tests) 16ms
+2026-11-23T10:05:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:39Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module048.test.ts (8 tests) 70ms
+2026-11-23T10:05:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:46Z INFO [http] GET /health 200 2ms
+ ✓ src/module049.test.ts (11 tests) 20ms
+2026-11-23T10:05:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:53Z INFO [http] GET /health 200 2ms
+2026-11-23T10:05:54Z WARN [cache] eviction rate high: 5.1%
+ ✓ src/module050.test.ts (10 tests) 29ms
+2026-11-23T10:05:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:05:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:01Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module051.test.ts (12 tests) 32ms
+2026-11-23T10:06:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:08Z INFO [http] GET /health 200 2ms
+ ✓ src/module052.test.ts (14 tests) 95ms
+2026-11-23T10:06:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:15Z INFO [http] GET /health 200 2ms
+ ✓ src/module053.test.ts (13 tests) 10ms
+2026-11-23T10:06:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:22Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module054.test.ts (6 tests) 12ms
+2026-11-23T10:06:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:29Z INFO [http] GET /health 200 2ms
+ ✓ src/module055.test.ts (14 tests) 39ms
+2026-11-23T10:06:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:36Z INFO [http] GET /health 200 2ms
+ ✓ src/module056.test.ts (12 tests) 87ms
+2026-11-23T10:06:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:43Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module057.test.ts (5 tests) 32ms
+2026-11-23T10:06:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:50Z INFO [http] GET /health 200 2ms
+ ✓ src/module058.test.ts (13 tests) 81ms
+2026-11-23T10:06:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:57Z INFO [http] GET /health 200 2ms
+ ✓ src/module059.test.ts (12 tests) 29ms
+2026-11-23T10:06:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:06:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:04Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+2026-11-23T10:07:05Z WARN [cache] eviction rate high: 1.0%
+ ✓ src/module060.test.ts (6 tests) 46ms
+2026-11-23T10:07:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:12Z INFO [http] GET /health 200 2ms
+ ✓ src/module061.test.ts (10 tests) 35ms
+2026-11-23T10:07:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:19Z INFO [http] GET /health 200 2ms
+ ✓ src/module062.test.ts (13 tests) 38ms
+2026-11-23T10:07:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:26Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module063.test.ts (14 tests) 87ms
+2026-11-23T10:07:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:33Z INFO [http] GET /health 200 2ms
+ ✓ src/module064.test.ts (11 tests) 70ms
+2026-11-23T10:07:34Z INFO [perf] slowest test: src/report/export.test.ts 4200ms
+2026-11-23T10:07:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:41Z INFO [http] GET /health 200 2ms
+ ✓ src/module065.test.ts (7 tests) 44ms
+2026-11-23T10:07:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:48Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module066.test.ts (8 tests) 28ms
+2026-11-23T10:07:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:55Z INFO [http] GET /health 200 2ms
+ ✓ src/module067.test.ts (7 tests) 93ms
+2026-11-23T10:07:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:07:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:02Z INFO [http] GET /health 200 2ms
+ ✓ src/module068.test.ts (14 tests) 24ms
+2026-11-23T10:08:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:09Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module069.test.ts (8 tests) 16ms
+2026-11-23T10:08:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:16Z INFO [http] GET /health 200 2ms
+2026-11-23T10:08:17Z WARN [cache] eviction rate high: 0.4%
+ ✓ src/module070.test.ts (12 tests) 44ms
+2026-11-23T10:08:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:24Z INFO [http] GET /health 200 2ms
+ ✓ src/module071.test.ts (7 tests) 23ms
+2026-11-23T10:08:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:31Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module072.test.ts (13 tests) 37ms
+2026-11-23T10:08:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:38Z INFO [http] GET /health 200 2ms
+ ✓ src/module073.test.ts (13 tests) 57ms
+2026-11-23T10:08:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:45Z INFO [http] GET /health 200 2ms
+ ✓ src/module074.test.ts (9 tests) 71ms
+2026-11-23T10:08:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:52Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module075.test.ts (8 tests) 32ms
+2026-11-23T10:08:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:08:59Z INFO [http] GET /health 200 2ms
+ ✓ src/module076.test.ts (10 tests) 78ms
+2026-11-23T10:09:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:06Z INFO [http] GET /health 200 2ms
+ ✓ src/module077.test.ts (12 tests) 14ms
+ FAIL  src/billing/invoice.test.ts > computes totals with tax
+AssertionError: expected 118.5 to be 118.05 // Object.is equality
+    at src/billing/invoice.test.ts:42:19
+2026-11-23T10:09:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:13Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module078.test.ts (7 tests) 66ms
+2026-11-23T10:09:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:20Z INFO [http] GET /health 200 2ms
+ ✓ src/module079.test.ts (11 tests) 12ms
+2026-11-23T10:09:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:27Z INFO [http] GET /health 200 2ms
+2026-11-23T10:09:28Z WARN [cache] eviction rate high: 3.3%
+ ✓ src/module080.test.ts (9 tests) 88ms
+2026-11-23T10:09:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:35Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module081.test.ts (11 tests) 42ms
+2026-11-23T10:09:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:42Z INFO [http] GET /health 200 2ms
+ ✓ src/module082.test.ts (8 tests) 64ms
+2026-11-23T10:09:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:49Z INFO [http] GET /health 200 2ms
+ ✓ src/module083.test.ts (5 tests) 93ms
+2026-11-23T10:09:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:56Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module084.test.ts (10 tests) 61ms
+2026-11-23T10:09:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:09:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:03Z INFO [http] GET /health 200 2ms
+ ✓ src/module085.test.ts (11 tests) 21ms
+2026-11-23T10:10:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:10Z INFO [http] GET /health 200 2ms
+ ✓ src/module086.test.ts (5 tests) 83ms
+2026-11-23T10:10:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:17Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module087.test.ts (6 tests) 73ms
+2026-11-23T10:10:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:24Z INFO [http] GET /health 200 2ms
+ ✓ src/module088.test.ts (7 tests) 67ms
+2026-11-23T10:10:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:31Z INFO [http] GET /health 200 2ms
+ ✓ src/module089.test.ts (7 tests) 59ms
+2026-11-23T10:10:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:38Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+2026-11-23T10:10:39Z WARN [cache] eviction rate high: 9.3%
+ ✓ src/module090.test.ts (5 tests) 19ms
+2026-11-23T10:10:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:46Z INFO [http] GET /health 200 2ms
+ ✓ src/module091.test.ts (6 tests) 71ms
+2026-11-23T10:10:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:53Z INFO [http] GET /health 200 2ms
+ ✓ src/module092.test.ts (5 tests) 57ms
+2026-11-23T10:10:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:10:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:00Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module093.test.ts (8 tests) 80ms
+2026-11-23T10:11:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:07Z INFO [http] GET /health 200 2ms
+ ✓ src/module094.test.ts (7 tests) 17ms
+2026-11-23T10:11:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:14Z INFO [http] GET /health 200 2ms
+ ✓ src/module095.test.ts (14 tests) 97ms
+2026-11-23T10:11:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:21Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module096.test.ts (5 tests) 87ms
+2026-11-23T10:11:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:28Z INFO [http] GET /health 200 2ms
+ ✓ src/module097.test.ts (6 tests) 45ms
+2026-11-23T10:11:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:35Z INFO [http] GET /health 200 2ms
+ ✓ src/module098.test.ts (11 tests) 57ms
+2026-11-23T10:11:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:42Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module099.test.ts (8 tests) 74ms
+2026-11-23T10:11:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:49Z INFO [http] GET /health 200 2ms
+2026-11-23T10:11:50Z WARN [cache] eviction rate high: 1.3%
+ ✓ src/module100.test.ts (7 tests) 96ms
+2026-11-23T10:11:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:57Z INFO [http] GET /health 200 2ms
+ ✓ src/module101.test.ts (11 tests) 58ms
+2026-11-23T10:11:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:11:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:04Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module102.test.ts (5 tests) 24ms
+2026-11-23T10:12:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:11Z INFO [http] GET /health 200 2ms
+ ✓ src/module103.test.ts (11 tests) 31ms
+ FAIL  src/auth/session.test.ts > refreshes expired tokens
+TypeError: Cannot read properties of undefined (reading 'expiresAt')
+    at refresh (src/auth/session.ts:88:23)
+    at src/auth/session.test.ts:57:11
+2026-11-23T10:12:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:15Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:18Z INFO [http] GET /health 200 2ms
+ ✓ src/module104.test.ts (6 tests) 67ms
+2026-11-23T10:12:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:22Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:25Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module105.test.ts (11 tests) 11ms
+2026-11-23T10:12:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:29Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:32Z INFO [http] GET /health 200 2ms
+ ✓ src/module106.test.ts (5 tests) 12ms
+2026-11-23T10:12:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:36Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:39Z INFO [http] GET /health 200 2ms
+ ✓ src/module107.test.ts (9 tests) 70ms
+2026-11-23T10:12:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:43Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:46Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module108.test.ts (11 tests) 81ms
+2026-11-23T10:12:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:50Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:53Z INFO [http] GET /health 200 2ms
+ ✓ src/module109.test.ts (11 tests) 70ms
+2026-11-23T10:12:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:57Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:12:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:00Z INFO [http] GET /health 200 2ms
+2026-11-23T10:13:01Z WARN [cache] eviction rate high: 9.6%
+ ✓ src/module110.test.ts (5 tests) 88ms
+2026-11-23T10:13:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:04Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:08Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module111.test.ts (14 tests) 12ms
+2026-11-23T10:13:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:11Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:12Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:13Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:14Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:15Z INFO [http] GET /health 200 2ms
+ ✓ src/module112.test.ts (13 tests) 58ms
+2026-11-23T10:13:16Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:17Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:18Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:19Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:20Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:21Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:22Z INFO [http] GET /health 200 2ms
+ ✓ src/module113.test.ts (10 tests) 43ms
+2026-11-23T10:13:23Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:24Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:25Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:26Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:27Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:28Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:29Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module114.test.ts (6 tests) 17ms
+2026-11-23T10:13:30Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:31Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:32Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:33Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:34Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:35Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:36Z INFO [http] GET /health 200 2ms
+ ✓ src/module115.test.ts (11 tests) 43ms
+2026-11-23T10:13:37Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:38Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:39Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:40Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:41Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:42Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:43Z INFO [http] GET /health 200 2ms
+ ✓ src/module116.test.ts (5 tests) 55ms
+2026-11-23T10:13:44Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:45Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:46Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:47Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:48Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:49Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:50Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+ ✓ src/module117.test.ts (10 tests) 71ms
+2026-11-23T10:13:51Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:52Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:53Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:54Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:55Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:56Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:57Z INFO [http] GET /health 200 2ms
+ ✓ src/module118.test.ts (13 tests) 54ms
+2026-11-23T10:13:58Z INFO [db] pool size=10 idle=8
+2026-11-23T10:13:59Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:00Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:01Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:02Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:03Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:04Z INFO [http] GET /health 200 2ms
+ ✓ src/module119.test.ts (12 tests) 15ms
+2026-11-23T10:14:05Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:06Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:07Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:08Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:09Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:10Z INFO [db] pool size=10 idle=8
+2026-11-23T10:14:11Z INFO [http] GET /health 200 2ms
+(node:4242) [DEP0040] DeprecationWarning: The `punycode` module is deprecated.
+2026-11-23T10:14:12Z WARN [cache] eviction rate high: 4.0%
+ ✓ src/module120.test.ts (12 tests) 28ms
+
+ Test Files  2 failed | 118 passed (120)
+      Tests  2 failed | 940 passed (942)

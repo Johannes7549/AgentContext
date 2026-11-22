@@ -1,0 +1,77 @@
+{
+  "id": "duplicate-heavy",
+  "title": "Incident digest with repeated boilerplate",
+  "task": "List the unique events and how often the standard disclaimer appears.",
+  "input": "input.md",
+  "contentType": "text",
+  "options": {},
+  "facts": [
+    {
+      "id": "event-1",
+      "kind": "contains",
+      "text": "Event 1: at "
+    },
+    {
+      "id": "event-2",
+      "kind": "contains",
+      "text": "Event 2: at "
+    },
+    {
+      "id": "event-3",
+      "kind": "contains",
+      "text": "Event 3: at "
+    },
+    {
+      "id": "event-4",
+      "kind": "contains",
+      "text": "Event 4: at "
+    },
+    {
+      "id": "event-5",
+      "kind": "contains",
+      "text": "Event 5: at "
+    },
+    {
+      "id": "event-6",
+      "kind": "contains",
+      "text": "Event 6: at "
+    },
+    {
+      "id": "event-7",
+      "kind": "contains",
+      "text": "Event 7: at "
+    },
+    {
+      "id": "event-8",
+      "kind": "contains",
+      "text": "Event 8: at "
+    },
+    {
+      "id": "event-9",
+      "kind": "contains",
+      "text": "Event 9: at "
+    },
+    {
+      "id": "event-10",
+      "kind": "contains",
+      "text": "Event 10: at "
+    },
+    {
+      "id": "event-11",
+      "kind": "contains",
+      "text": "Event 11: at "
+    },
+    {
+      "id": "event-12",
+      "kind": "contains",
+      "text": "Event 12: at "
+    },
+    {
+      "id": "disclaimer-count",
+      "kind": "occurrences",
+      "text": "This report was generated automatically by the monitoring system. Do not reply to this message; contact the on-call engineer through the incident channel instead.",
+      "count": 24
+    }
+  ],
+  "recovery": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "api-responses",
+  "title": "Large API response (field selection)",
+  "task": "Report the email and plan of customers cus_0042 and cus_0137.",
+  "input": "input.json",
+  "options": {
+    "selection": {
+      "json": {
+        "include": [
+          "$.data[*].id",
+          "$.data[*].email",
+          "$.data[*].plan"
+        ]
+      }
+    }
+  },
+  "facts": [
+    {
+      "id": "c42",
+      "kind": "json-record",
+      "array": "data",
+      "match": {
+        "id": "cus_0042"
+      },
+      "expect": {
+        "email": "user0042@example.com"
+      }
+    },
+    {
+      "id": "c137",
+      "kind": "json-record",
+      "array": "data",
+      "match": {
+        "id": "cus_0137"
+      },
+      "expect": {
+        "email": "user0137@example.com"
+      }
+    }
+  ],
+  "recovery": []
+}

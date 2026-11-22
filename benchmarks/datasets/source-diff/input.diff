@@ -1,0 +1,188 @@
+diff --git a/src/billing/invoice.ts b/src/billing/invoice.ts
+index 1a2b3c4..5d6e7f8 100644
+--- a/src/billing/invoice.ts
++++ b/src/billing/invoice.ts
+@@ -1,41 +1,41 @@
+    const value0_1 = compute(1);
+    const value0_2 = compute(2);
+    const value0_3 = compute(3);
+    const value0_4 = compute(4);
+    const value0_5 = compute(5);
+    const value0_6 = compute(6);
+    const value0_7 = compute(7);
+    const value0_8 = compute(8);
+    const value0_9 = compute(9);
+    const value0_10 = compute(10);
+    const value0_11 = compute(11);
+    const value0_12 = compute(12);
+    const value0_13 = compute(13);
+    const value0_14 = compute(14);
+    const value0_15 = compute(15);
+    const value0_16 = compute(16);
+    const value0_17 = compute(17);
+    const value0_18 = compute(18);
+    const value0_19 = compute(19);
+    const value0_20 = compute(20);
+-  const tax = subtotal * 0.18;
++  const tax = (subtotal - discount) * rate;
+    const value0_21 = compute(21);
+    const value0_22 = compute(22);
+    const value0_23 = compute(23);
+    const value0_24 = compute(24);
+    const value0_25 = compute(25);
+    const value0_26 = compute(26);
+    const value0_27 = compute(27);
+    const value0_28 = compute(28);
+    const value0_29 = compute(29);
+    const value0_30 = compute(30);
+    const value0_31 = compute(31);
+    const value0_32 = compute(32);
+    const value0_33 = compute(33);
+    const value0_34 = compute(34);
+    const value0_35 = compute(35);
+    const value0_36 = compute(36);
+    const value0_37 = compute(37);
+    const value0_38 = compute(38);
+    const value0_39 = compute(39);
+    const value0_40 = compute(40);
+diff --git a/src/billing/tax.ts b/src/billing/tax.ts
+index 1a2b3c4..5d6e7f8 100644
+--- a/src/billing/tax.ts
++++ b/src/billing/tax.ts
+@@ -1,41 +1,41 @@
+    const value1_1 = compute(1);
+    const value1_2 = compute(2);
+    const value1_3 = compute(3);
+    const value1_4 = compute(4);
+    const value1_5 = compute(5);
+    const value1_6 = compute(6);
+    const value1_7 = compute(7);
+    const value1_8 = compute(8);
+    const value1_9 = compute(9);
+    const value1_10 = compute(10);
+    const value1_11 = compute(11);
+    const value1_12 = compute(12);
+    const value1_13 = compute(13);
+    const value1_14 = compute(14);
+    const value1_15 = compute(15);
+    const value1_16 = compute(16);
+    const value1_17 = compute(17);
+    const value1_18 = compute(18);
+    const value1_19 = compute(19);
+    const value1_20 = compute(20);
+-export const DEFAULT_RATE = 0.2;
++export const DEFAULT_RATE = 0.18;
+    const value1_21 = compute(21);
+    const value1_22 = compute(22);
+    const value1_23 = compute(23);
+    const value1_24 = compute(24);
+    const value1_25 = compute(25);
+    const value1_26 = compute(26);
+    const value1_27 = compute(27);
+    const value1_28 = compute(28);
+    const value1_29 = compute(29);
+    const value1_30 = compute(30);
+    const value1_31 = compute(31);
+    const value1_32 = compute(32);
+    const value1_33 = compute(33);
+    const value1_34 = compute(34);
+    const value1_35 = compute(35);
+    const value1_36 = compute(36);
+    const value1_37 = compute(37);
+    const value1_38 = compute(38);
+    const value1_39 = compute(39);
+    const value1_40 = compute(40);
+diff --git a/src/auth/session.ts b/src/auth/session.ts
+index 1a2b3c4..5d6e7f8 100644
+--- a/src/auth/session.ts
++++ b/src/auth/session.ts
+@@ -1,41 +1,41 @@
+    const value2_1 = compute(1);
+    const value2_2 = compute(2);
+    const value2_3 = compute(3);
+    const value2_4 = compute(4);
+    const value2_5 = compute(5);
+    const value2_6 = compute(6);
+    const value2_7 = compute(7);
+    const value2_8 = compute(8);
+    const value2_9 = compute(9);
+    const value2_10 = compute(10);
+    const value2_11 = compute(11);
+    const value2_12 = compute(12);
+    const value2_13 = compute(13);
+    const value2_14 = compute(14);
+    const value2_15 = compute(15);
+    const value2_16 = compute(16);
+    const value2_17 = compute(17);
+    const value2_18 = compute(18);
+    const value2_19 = compute(19);
+    const value2_20 = compute(20);
+-  if (session.expiresAt < now) {
++  if (session?.expiresAt !== undefined && session.expiresAt < now) {
+    const value2_21 = compute(21);
+    const value2_22 = compute(22);
+    const value2_23 = compute(23);
+    const value2_24 = compute(24);
+    const value2_25 = compute(25);
+    const value2_26 = compute(26);
+    const value2_27 = compute(27);
+    const value2_28 = compute(28);
+    const value2_29 = compute(29);
+    const value2_30 = compute(30);
+    const value2_31 = compute(31);
+    const value2_32 = compute(32);
+    const value2_33 = compute(33);
+    const value2_34 = compute(34);
+    const value2_35 = compute(35);
+    const value2_36 = compute(36);
+    const value2_37 = compute(37);
+    const value2_38 = compute(38);
+    const value2_39 = compute(39);
+    const value2_40 = compute(40);
+diff --git a/src/api/routes.ts b/src/api/routes.ts
+index 1a2b3c4..5d6e7f8 100644
+--- a/src/api/routes.ts
++++ b/src/api/routes.ts
+@@ -1,41 +1,41 @@
+    const value3_1 = compute(1);
+    const value3_2 = compute(2);
+    const value3_3 = compute(3);
+    const value3_4 = compute(4);
+    const value3_5 = compute(5);
+    const value3_6 = compute(6);
+    const value3_7 = compute(7);
+    const value3_8 = compute(8);
+    const value3_9 = compute(9);
+    const value3_10 = compute(10);
+    const value3_11 = compute(11);
+    const value3_12 = compute(12);
+    const value3_13 = compute(13);
+    const value3_14 = compute(14);
+    const value3_15 = compute(15);
+    const value3_16 = compute(16);
+    const value3_17 = compute(17);
+    const value3_18 = compute(18);
+    const value3_19 = compute(19);
+    const value3_20 = compute(20);
+-router.get('/v1/invoices', list);
++router.get('/v2/invoices', list);
+    const value3_21 = compute(21);
+    const value3_22 = compute(22);
+    const value3_23 = compute(23);
+    const value3_24 = compute(24);
+    const value3_25 = compute(25);
+    const value3_26 = compute(26);
+    const value3_27 = compute(27);
+    const value3_28 = compute(28);
+    const value3_29 = compute(29);
+    const value3_30 = compute(30);
+    const value3_31 = compute(31);
+    const value3_32 = compute(32);
+    const value3_33 = compute(33);
+    const value3_34 = compute(34);
+    const value3_35 = compute(35);
+    const value3_36 = compute(36);
+    const value3_37 = compute(37);
+    const value3_38 = compute(38);
+    const value3_39 = compute(39);
+    const value3_40 = compute(40);

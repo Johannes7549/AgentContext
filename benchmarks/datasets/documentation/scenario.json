@@ -1,0 +1,41 @@
+{
+  "id": "documentation",
+  "title": "Long handbook (section selection, one fact needs recovery)",
+  "task": "What is the default port, how do you fix EACCES at startup, and which Node version is required?",
+  "input": "input.md",
+  "options": {
+    "selection": {
+      "markdown": {
+        "sections": [
+          "Configuration",
+          "Troubleshooting"
+        ]
+      }
+    }
+  },
+  "facts": [
+    {
+      "id": "port",
+      "kind": "contains",
+      "text": "The default port is 7341"
+    },
+    {
+      "id": "eacces",
+      "kind": "contains",
+      "text": "tool doctor --fix-permissions"
+    },
+    {
+      "id": "node",
+      "kind": "contains",
+      "text": "minimum supported Node version is 22.13"
+    }
+  ],
+  "recovery": [
+    {
+      "selector": {
+        "type": "keyword",
+        "value": "Node version"
+      }
+    }
+  ]
+}

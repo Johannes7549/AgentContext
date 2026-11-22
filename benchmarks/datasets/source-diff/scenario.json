@@ -1,0 +1,30 @@
+{
+  "id": "source-diff",
+  "title": "Multi-file diff with wide context",
+  "task": "Summarize every change in the diff.",
+  "input": "input.diff",
+  "options": {},
+  "facts": [
+    {
+      "id": "invoice",
+      "kind": "contains",
+      "text": "+  const tax = (subtotal - discount) * rate;"
+    },
+    {
+      "id": "rate",
+      "kind": "contains",
+      "text": "+export const DEFAULT_RATE = 0.18;"
+    },
+    {
+      "id": "session",
+      "kind": "contains",
+      "text": "+  if (session?.expiresAt !== undefined && session.expiresAt < now) {"
+    },
+    {
+      "id": "route",
+      "kind": "contains",
+      "text": "+router.get('/v2/invoices', list);"
+    }
+  ],
+  "recovery": []
+}

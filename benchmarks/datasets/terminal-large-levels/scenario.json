@@ -1,0 +1,61 @@
+{
+  "id": "terminal-large-levels",
+  "title": "Large test run (warn+error levels, one fact needs recovery)",
+  "task": "Identify the failing tests and also report the slowest test.",
+  "input": "input.log",
+  "options": {
+    "selection": {
+      "logs": {}
+    }
+  },
+  "facts": [
+    {
+      "id": "fail-1",
+      "kind": "contains",
+      "text": "FAIL  src/billing/invoice.test.ts > computes totals with tax"
+    },
+    {
+      "id": "error-1",
+      "kind": "contains",
+      "text": "AssertionError: expected 118.5 to be 118.05"
+    },
+    {
+      "id": "loc-1",
+      "kind": "contains",
+      "text": "src/billing/invoice.test.ts:42:19"
+    },
+    {
+      "id": "fail-2",
+      "kind": "contains",
+      "text": "FAIL  src/auth/session.test.ts > refreshes expired tokens"
+    },
+    {
+      "id": "error-2",
+      "kind": "contains",
+      "text": "TypeError: Cannot read properties of undefined (reading 'expiresAt')"
+    },
+    {
+      "id": "loc-2",
+      "kind": "contains",
+      "text": "at refresh (src/auth/session.ts:88:23)"
+    },
+    {
+      "id": "summary",
+      "kind": "contains",
+      "text": "Tests  2 failed | 940 passed (942)"
+    },
+    {
+      "id": "slowest",
+      "kind": "contains",
+      "text": "slowest test: src/report/export.test.ts 4200ms"
+    }
+  ],
+  "recovery": [
+    {
+      "selector": {
+        "type": "keyword",
+        "value": "slowest test"
+      }
+    }
+  ]
+}

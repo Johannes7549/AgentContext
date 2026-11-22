@@ -1,0 +1,5018 @@
+{
+  "data": [
+    {
+      "id": "cus_0001",
+      "name": "Alan Sample",
+      "email": "user0001@example.com",
+      "plan": "team",
+      "created_at": "2025-02-02T08:00:00Z",
+      "address": {
+        "line1": "1 Example Street",
+        "city": "Riverton",
+        "postcode": "EX1 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 32.5,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0002",
+      "name": "Grace Test",
+      "email": "user0002@example.com",
+      "plan": "pro",
+      "created_at": "2025-03-03T08:00:00Z",
+      "address": {
+        "line1": "2 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX2 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 53.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0003",
+      "name": "Linus Demo",
+      "email": "user0003@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-04-04T08:00:00Z",
+      "address": {
+        "line1": "3 Example Street",
+        "city": "Hillview",
+        "postcode": "EX3 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 63.1,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0004",
+      "name": "Barbara Placeholder",
+      "email": "user0004@example.com",
+      "plan": "pro",
+      "created_at": "2025-05-05T08:00:00Z",
+      "address": {
+        "line1": "4 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX4 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 35.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0005",
+      "name": "Edsger Example",
+      "email": "user0005@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-06-06T08:00:00Z",
+      "address": {
+        "line1": "5 Example Street",
+        "city": "Springfield",
+        "postcode": "EX5 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 11.4,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0006",
+      "name": "Margaret Sample",
+      "email": "user0006@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-07-07T08:00:00Z",
+      "address": {
+        "line1": "6 Example Street",
+        "city": "Riverton",
+        "postcode": "EX6 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 20.2,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0007",
+      "name": "Dennis Test",
+      "email": "user0007@example.com",
+      "plan": "pro",
+      "created_at": "2025-08-08T08:00:00Z",
+      "address": {
+        "line1": "7 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX7 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 83.5,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0008",
+      "name": "Frances Demo",
+      "email": "user0008@example.com",
+      "plan": "team",
+      "created_at": "2025-09-09T08:00:00Z",
+      "address": {
+        "line1": "8 Example Street",
+        "city": "Hillview",
+        "postcode": "EX8 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 14.1,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0009",
+      "name": "Ken Placeholder",
+      "email": "user0009@example.com",
+      "plan": "team",
+      "created_at": "2025-10-10T08:00:00Z",
+      "address": {
+        "line1": "9 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX0 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 36.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0010",
+      "name": "Ada Example",
+      "email": "user0010@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-11-11T08:00:00Z",
+      "address": {
+        "line1": "10 Example Street",
+        "city": "Springfield",
+        "postcode": "EX1 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 3.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0011",
+      "name": "Alan Sample",
+      "email": "user0011@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-12-12T08:00:00Z",
+      "address": {
+        "line1": "11 Example Street",
+        "city": "Riverton",
+        "postcode": "EX2 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 6.2,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0012",
+      "name": "Grace Test",
+      "email": "user0012@example.com",
+      "plan": "free",
+      "created_at": "2025-01-13T08:00:00Z",
+      "address": {
+        "line1": "12 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX3 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 19.2,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0013",
+      "name": "Linus Demo",
+      "email": "user0013@example.com",
+      "plan": "free",
+      "created_at": "2025-02-14T08:00:00Z",
+      "address": {
+        "line1": "13 Example Street",
+        "city": "Hillview",
+        "postcode": "EX4 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 94,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0014",
+      "name": "Barbara Placeholder",
+      "email": "user0014@example.com",
+      "plan": "pro",
+      "created_at": "2025-03-15T08:00:00Z",
+      "address": {
+        "line1": "14 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX5 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 63.5,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0015",
+      "name": "Edsger Example",
+      "email": "user0015@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-04-16T08:00:00Z",
+      "address": {
+        "line1": "15 Example Street",
+        "city": "Springfield",
+        "postcode": "EX6 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 23.3,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0016",
+      "name": "Margaret Sample",
+      "email": "user0016@example.com",
+      "plan": "pro",
+      "created_at": "2025-05-17T08:00:00Z",
+      "address": {
+        "line1": "16 Example Street",
+        "city": "Riverton",
+        "postcode": "EX7 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 34.8,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0017",
+      "name": "Dennis Test",
+      "email": "user0017@example.com",
+      "plan": "free",
+      "created_at": "2025-06-18T08:00:00Z",
+      "address": {
+        "line1": "17 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX8 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 52.1,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0018",
+      "name": "Frances Demo",
+      "email": "user0018@example.com",
+      "plan": "free",
+      "created_at": "2025-07-19T08:00:00Z",
+      "address": {
+        "line1": "18 Example Street",
+        "city": "Hillview",
+        "postcode": "EX0 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 5.8,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0019",
+      "name": "Ken Placeholder",
+      "email": "user0019@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-08-20T08:00:00Z",
+      "address": {
+        "line1": "19 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX1 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 80.5,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0020",
+      "name": "Ada Example",
+      "email": "user0020@example.com",
+      "plan": "free",
+      "created_at": "2025-09-21T08:00:00Z",
+      "address": {
+        "line1": "20 Example Street",
+        "city": "Springfield",
+        "postcode": "EX2 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 98.2,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0021",
+      "name": "Alan Sample",
+      "email": "user0021@example.com",
+      "plan": "free",
+      "created_at": "2025-10-22T08:00:00Z",
+      "address": {
+        "line1": "21 Example Street",
+        "city": "Riverton",
+        "postcode": "EX3 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 97.2,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0022",
+      "name": "Grace Test",
+      "email": "user0022@example.com",
+      "plan": "team",
+      "created_at": "2025-11-23T08:00:00Z",
+      "address": {
+        "line1": "22 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX4 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 19.5,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0023",
+      "name": "Linus Demo",
+      "email": "user0023@example.com",
+      "plan": "team",
+      "created_at": "2025-12-24T08:00:00Z",
+      "address": {
+        "line1": "23 Example Street",
+        "city": "Hillview",
+        "postcode": "EX5 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 5.1,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0024",
+      "name": "Barbara Placeholder",
+      "email": "user0024@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-01-25T08:00:00Z",
+      "address": {
+        "line1": "24 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX6 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 91.2,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0025",
+      "name": "Edsger Example",
+      "email": "user0025@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-02-26T08:00:00Z",
+      "address": {
+        "line1": "25 Example Street",
+        "city": "Springfield",
+        "postcode": "EX7 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 44.6,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0026",
+      "name": "Margaret Sample",
+      "email": "user0026@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-03-27T08:00:00Z",
+      "address": {
+        "line1": "26 Example Street",
+        "city": "Riverton",
+        "postcode": "EX8 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 7.1,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0027",
+      "name": "Dennis Test",
+      "email": "user0027@example.com",
+      "plan": "team",
+      "created_at": "2025-04-28T08:00:00Z",
+      "address": {
+        "line1": "27 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX0 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 98,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0028",
+      "name": "Frances Demo",
+      "email": "user0028@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-01T08:00:00Z",
+      "address": {
+        "line1": "28 Example Street",
+        "city": "Hillview",
+        "postcode": "EX1 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 64.2,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0029",
+      "name": "Ken Placeholder",
+      "email": "user0029@example.com",
+      "plan": "team",
+      "created_at": "2025-06-02T08:00:00Z",
+      "address": {
+        "line1": "29 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX2 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 3.3,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0030",
+      "name": "Ada Example",
+      "email": "user0030@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-07-03T08:00:00Z",
+      "address": {
+        "line1": "30 Example Street",
+        "city": "Springfield",
+        "postcode": "EX3 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 83.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0031",
+      "name": "Alan Sample",
+      "email": "user0031@example.com",
+      "plan": "team",
+      "created_at": "2025-08-04T08:00:00Z",
+      "address": {
+        "line1": "31 Example Street",
+        "city": "Riverton",
+        "postcode": "EX4 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 31.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0032",
+      "name": "Grace Test",
+      "email": "user0032@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-09-05T08:00:00Z",
+      "address": {
+        "line1": "32 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX5 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 92.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0033",
+      "name": "Linus Demo",
+      "email": "user0033@example.com",
+      "plan": "pro",
+      "created_at": "2025-10-06T08:00:00Z",
+      "address": {
+        "line1": "33 Example Street",
+        "city": "Hillview",
+        "postcode": "EX6 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 34.9,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0034",
+      "name": "Barbara Placeholder",
+      "email": "user0034@example.com",
+      "plan": "free",
+      "created_at": "2025-11-07T08:00:00Z",
+      "address": {
+        "line1": "34 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX7 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 95.2,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0035",
+      "name": "Edsger Example",
+      "email": "user0035@example.com",
+      "plan": "pro",
+      "created_at": "2025-12-08T08:00:00Z",
+      "address": {
+        "line1": "35 Example Street",
+        "city": "Springfield",
+        "postcode": "EX8 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 43.8,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0036",
+      "name": "Margaret Sample",
+      "email": "user0036@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-01-09T08:00:00Z",
+      "address": {
+        "line1": "36 Example Street",
+        "city": "Riverton",
+        "postcode": "EX0 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 86.7,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0037",
+      "name": "Dennis Test",
+      "email": "user0037@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-02-10T08:00:00Z",
+      "address": {
+        "line1": "37 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX1 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 43.2,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0038",
+      "name": "Frances Demo",
+      "email": "user0038@example.com",
+      "plan": "free",
+      "created_at": "2025-03-11T08:00:00Z",
+      "address": {
+        "line1": "38 Example Street",
+        "city": "Hillview",
+        "postcode": "EX2 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 64.6,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0039",
+      "name": "Ken Placeholder",
+      "email": "user0039@example.com",
+      "plan": "team",
+      "created_at": "2025-04-12T08:00:00Z",
+      "address": {
+        "line1": "39 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX3 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 71.3,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0040",
+      "name": "Ada Example",
+      "email": "user0040@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-13T08:00:00Z",
+      "address": {
+        "line1": "40 Example Street",
+        "city": "Springfield",
+        "postcode": "EX4 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 20.5,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0041",
+      "name": "Alan Sample",
+      "email": "user0041@example.com",
+      "plan": "pro",
+      "created_at": "2025-06-14T08:00:00Z",
+      "address": {
+        "line1": "41 Example Street",
+        "city": "Riverton",
+        "postcode": "EX5 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 34.5,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0042",
+      "name": "Grace Test",
+      "email": "user0042@example.com",
+      "plan": "team",
+      "created_at": "2025-07-15T08:00:00Z",
+      "address": {
+        "line1": "42 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX6 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 2.7,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0043",
+      "name": "Linus Demo",
+      "email": "user0043@example.com",
+      "plan": "pro",
+      "created_at": "2025-08-16T08:00:00Z",
+      "address": {
+        "line1": "43 Example Street",
+        "city": "Hillview",
+        "postcode": "EX7 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 83.1,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0044",
+      "name": "Barbara Placeholder",
+      "email": "user0044@example.com",
+      "plan": "free",
+      "created_at": "2025-09-17T08:00:00Z",
+      "address": {
+        "line1": "44 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX8 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 77.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0045",
+      "name": "Edsger Example",
+      "email": "user0045@example.com",
+      "plan": "pro",
+      "created_at": "2025-10-18T08:00:00Z",
+      "address": {
+        "line1": "45 Example Street",
+        "city": "Springfield",
+        "postcode": "EX0 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 41.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0046",
+      "name": "Margaret Sample",
+      "email": "user0046@example.com",
+      "plan": "pro",
+      "created_at": "2025-11-19T08:00:00Z",
+      "address": {
+        "line1": "46 Example Street",
+        "city": "Riverton",
+        "postcode": "EX1 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 84.4,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0047",
+      "name": "Dennis Test",
+      "email": "user0047@example.com",
+      "plan": "pro",
+      "created_at": "2025-12-20T08:00:00Z",
+      "address": {
+        "line1": "47 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX2 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 99,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0048",
+      "name": "Frances Demo",
+      "email": "user0048@example.com",
+      "plan": "pro",
+      "created_at": "2025-01-21T08:00:00Z",
+      "address": {
+        "line1": "48 Example Street",
+        "city": "Hillview",
+        "postcode": "EX3 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 8.5,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0049",
+      "name": "Ken Placeholder",
+      "email": "user0049@example.com",
+      "plan": "team",
+      "created_at": "2025-02-22T08:00:00Z",
+      "address": {
+        "line1": "49 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX4 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 2.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0050",
+      "name": "Ada Example",
+      "email": "user0050@example.com",
+      "plan": "team",
+      "created_at": "2025-03-23T08:00:00Z",
+      "address": {
+        "line1": "50 Example Street",
+        "city": "Springfield",
+        "postcode": "EX5 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 78.2,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0051",
+      "name": "Alan Sample",
+      "email": "user0051@example.com",
+      "plan": "team",
+      "created_at": "2025-04-24T08:00:00Z",
+      "address": {
+        "line1": "51 Example Street",
+        "city": "Riverton",
+        "postcode": "EX6 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 28.7,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0052",
+      "name": "Grace Test",
+      "email": "user0052@example.com",
+      "plan": "pro",
+      "created_at": "2025-05-25T08:00:00Z",
+      "address": {
+        "line1": "52 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX7 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 65.1,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0053",
+      "name": "Linus Demo",
+      "email": "user0053@example.com",
+      "plan": "free",
+      "created_at": "2025-06-26T08:00:00Z",
+      "address": {
+        "line1": "53 Example Street",
+        "city": "Hillview",
+        "postcode": "EX8 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 18.8,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0054",
+      "name": "Barbara Placeholder",
+      "email": "user0054@example.com",
+      "plan": "team",
+      "created_at": "2025-07-27T08:00:00Z",
+      "address": {
+        "line1": "54 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX0 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 97.5,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0055",
+      "name": "Edsger Example",
+      "email": "user0055@example.com",
+      "plan": "team",
+      "created_at": "2025-08-28T08:00:00Z",
+      "address": {
+        "line1": "55 Example Street",
+        "city": "Springfield",
+        "postcode": "EX1 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 11.4,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0056",
+      "name": "Margaret Sample",
+      "email": "user0056@example.com",
+      "plan": "team",
+      "created_at": "2025-09-01T08:00:00Z",
+      "address": {
+        "line1": "56 Example Street",
+        "city": "Riverton",
+        "postcode": "EX2 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 94.6,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0057",
+      "name": "Dennis Test",
+      "email": "user0057@example.com",
+      "plan": "free",
+      "created_at": "2025-10-02T08:00:00Z",
+      "address": {
+        "line1": "57 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX3 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 57.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0058",
+      "name": "Frances Demo",
+      "email": "user0058@example.com",
+      "plan": "team",
+      "created_at": "2025-11-03T08:00:00Z",
+      "address": {
+        "line1": "58 Example Street",
+        "city": "Hillview",
+        "postcode": "EX4 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 71.8,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0059",
+      "name": "Ken Placeholder",
+      "email": "user0059@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-12-04T08:00:00Z",
+      "address": {
+        "line1": "59 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX5 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 42.5,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0060",
+      "name": "Ada Example",
+      "email": "user0060@example.com",
+      "plan": "team",
+      "created_at": "2025-01-05T08:00:00Z",
+      "address": {
+        "line1": "60 Example Street",
+        "city": "Springfield",
+        "postcode": "EX6 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 6.8,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0061",
+      "name": "Alan Sample",
+      "email": "user0061@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-02-06T08:00:00Z",
+      "address": {
+        "line1": "61 Example Street",
+        "city": "Riverton",
+        "postcode": "EX7 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 44.5,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0062",
+      "name": "Grace Test",
+      "email": "user0062@example.com",
+      "plan": "free",
+      "created_at": "2025-03-07T08:00:00Z",
+      "address": {
+        "line1": "62 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX8 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 58.2,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0063",
+      "name": "Linus Demo",
+      "email": "user0063@example.com",
+      "plan": "pro",
+      "created_at": "2025-04-08T08:00:00Z",
+      "address": {
+        "line1": "63 Example Street",
+        "city": "Hillview",
+        "postcode": "EX0 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 57,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0064",
+      "name": "Barbara Placeholder",
+      "email": "user0064@example.com",
+      "plan": "team",
+      "created_at": "2025-05-09T08:00:00Z",
+      "address": {
+        "line1": "64 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX1 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 30.3,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0065",
+      "name": "Edsger Example",
+      "email": "user0065@example.com",
+      "plan": "free",
+      "created_at": "2025-06-10T08:00:00Z",
+      "address": {
+        "line1": "65 Example Street",
+        "city": "Springfield",
+        "postcode": "EX2 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 90.6,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0066",
+      "name": "Margaret Sample",
+      "email": "user0066@example.com",
+      "plan": "team",
+      "created_at": "2025-07-11T08:00:00Z",
+      "address": {
+        "line1": "66 Example Street",
+        "city": "Riverton",
+        "postcode": "EX3 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 52,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0067",
+      "name": "Dennis Test",
+      "email": "user0067@example.com",
+      "plan": "free",
+      "created_at": "2025-08-12T08:00:00Z",
+      "address": {
+        "line1": "67 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX4 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 15.6,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0068",
+      "name": "Frances Demo",
+      "email": "user0068@example.com",
+      "plan": "pro",
+      "created_at": "2025-09-13T08:00:00Z",
+      "address": {
+        "line1": "68 Example Street",
+        "city": "Hillview",
+        "postcode": "EX5 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 82.2,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0069",
+      "name": "Ken Placeholder",
+      "email": "user0069@example.com",
+      "plan": "free",
+      "created_at": "2025-10-14T08:00:00Z",
+      "address": {
+        "line1": "69 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX6 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 97.8,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0070",
+      "name": "Ada Example",
+      "email": "user0070@example.com",
+      "plan": "free",
+      "created_at": "2025-11-15T08:00:00Z",
+      "address": {
+        "line1": "70 Example Street",
+        "city": "Springfield",
+        "postcode": "EX7 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 81.7,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0071",
+      "name": "Alan Sample",
+      "email": "user0071@example.com",
+      "plan": "pro",
+      "created_at": "2025-12-16T08:00:00Z",
+      "address": {
+        "line1": "71 Example Street",
+        "city": "Riverton",
+        "postcode": "EX8 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 31.5,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0072",
+      "name": "Grace Test",
+      "email": "user0072@example.com",
+      "plan": "team",
+      "created_at": "2025-01-17T08:00:00Z",
+      "address": {
+        "line1": "72 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX0 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 91.1,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0073",
+      "name": "Linus Demo",
+      "email": "user0073@example.com",
+      "plan": "pro",
+      "created_at": "2025-02-18T08:00:00Z",
+      "address": {
+        "line1": "73 Example Street",
+        "city": "Hillview",
+        "postcode": "EX1 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 40.5,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0074",
+      "name": "Barbara Placeholder",
+      "email": "user0074@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-03-19T08:00:00Z",
+      "address": {
+        "line1": "74 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX2 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 89.4,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0075",
+      "name": "Edsger Example",
+      "email": "user0075@example.com",
+      "plan": "pro",
+      "created_at": "2025-04-20T08:00:00Z",
+      "address": {
+        "line1": "75 Example Street",
+        "city": "Springfield",
+        "postcode": "EX3 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 42.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0076",
+      "name": "Margaret Sample",
+      "email": "user0076@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-21T08:00:00Z",
+      "address": {
+        "line1": "76 Example Street",
+        "city": "Riverton",
+        "postcode": "EX4 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 92.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0077",
+      "name": "Dennis Test",
+      "email": "user0077@example.com",
+      "plan": "team",
+      "created_at": "2025-06-22T08:00:00Z",
+      "address": {
+        "line1": "77 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX5 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 83.4,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0078",
+      "name": "Frances Demo",
+      "email": "user0078@example.com",
+      "plan": "free",
+      "created_at": "2025-07-23T08:00:00Z",
+      "address": {
+        "line1": "78 Example Street",
+        "city": "Hillview",
+        "postcode": "EX6 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 37.4,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0079",
+      "name": "Ken Placeholder",
+      "email": "user0079@example.com",
+      "plan": "pro",
+      "created_at": "2025-08-24T08:00:00Z",
+      "address": {
+        "line1": "79 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX7 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 13.9,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0080",
+      "name": "Ada Example",
+      "email": "user0080@example.com",
+      "plan": "pro",
+      "created_at": "2025-09-25T08:00:00Z",
+      "address": {
+        "line1": "80 Example Street",
+        "city": "Springfield",
+        "postcode": "EX8 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 90.2,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0081",
+      "name": "Alan Sample",
+      "email": "user0081@example.com",
+      "plan": "pro",
+      "created_at": "2025-10-26T08:00:00Z",
+      "address": {
+        "line1": "81 Example Street",
+        "city": "Riverton",
+        "postcode": "EX0 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 28.2,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0082",
+      "name": "Grace Test",
+      "email": "user0082@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-11-27T08:00:00Z",
+      "address": {
+        "line1": "82 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX1 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 11.9,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0083",
+      "name": "Linus Demo",
+      "email": "user0083@example.com",
+      "plan": "free",
+      "created_at": "2025-12-28T08:00:00Z",
+      "address": {
+        "line1": "83 Example Street",
+        "city": "Hillview",
+        "postcode": "EX2 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 5.9,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0084",
+      "name": "Barbara Placeholder",
+      "email": "user0084@example.com",
+      "plan": "team",
+      "created_at": "2025-01-01T08:00:00Z",
+      "address": {
+        "line1": "84 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX3 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 68.2,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0085",
+      "name": "Edsger Example",
+      "email": "user0085@example.com",
+      "plan": "team",
+      "created_at": "2025-02-02T08:00:00Z",
+      "address": {
+        "line1": "85 Example Street",
+        "city": "Springfield",
+        "postcode": "EX4 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 78.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0086",
+      "name": "Margaret Sample",
+      "email": "user0086@example.com",
+      "plan": "pro",
+      "created_at": "2025-03-03T08:00:00Z",
+      "address": {
+        "line1": "86 Example Street",
+        "city": "Riverton",
+        "postcode": "EX5 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 85.8,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0087",
+      "name": "Dennis Test",
+      "email": "user0087@example.com",
+      "plan": "free",
+      "created_at": "2025-04-04T08:00:00Z",
+      "address": {
+        "line1": "87 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX6 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 67.4,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0088",
+      "name": "Frances Demo",
+      "email": "user0088@example.com",
+      "plan": "team",
+      "created_at": "2025-05-05T08:00:00Z",
+      "address": {
+        "line1": "88 Example Street",
+        "city": "Hillview",
+        "postcode": "EX7 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 85.7,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0089",
+      "name": "Ken Placeholder",
+      "email": "user0089@example.com",
+      "plan": "free",
+      "created_at": "2025-06-06T08:00:00Z",
+      "address": {
+        "line1": "89 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX8 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 55.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0090",
+      "name": "Ada Example",
+      "email": "user0090@example.com",
+      "plan": "free",
+      "created_at": "2025-07-07T08:00:00Z",
+      "address": {
+        "line1": "90 Example Street",
+        "city": "Springfield",
+        "postcode": "EX0 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 39.8,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0091",
+      "name": "Alan Sample",
+      "email": "user0091@example.com",
+      "plan": "pro",
+      "created_at": "2025-08-08T08:00:00Z",
+      "address": {
+        "line1": "91 Example Street",
+        "city": "Riverton",
+        "postcode": "EX1 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 88.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0092",
+      "name": "Grace Test",
+      "email": "user0092@example.com",
+      "plan": "team",
+      "created_at": "2025-09-09T08:00:00Z",
+      "address": {
+        "line1": "92 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX2 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 74.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0093",
+      "name": "Linus Demo",
+      "email": "user0093@example.com",
+      "plan": "free",
+      "created_at": "2025-10-10T08:00:00Z",
+      "address": {
+        "line1": "93 Example Street",
+        "city": "Hillview",
+        "postcode": "EX3 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 67.7,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0094",
+      "name": "Barbara Placeholder",
+      "email": "user0094@example.com",
+      "plan": "free",
+      "created_at": "2025-11-11T08:00:00Z",
+      "address": {
+        "line1": "94 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX4 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 89.3,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0095",
+      "name": "Edsger Example",
+      "email": "user0095@example.com",
+      "plan": "free",
+      "created_at": "2025-12-12T08:00:00Z",
+      "address": {
+        "line1": "95 Example Street",
+        "city": "Springfield",
+        "postcode": "EX5 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 25.8,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0096",
+      "name": "Margaret Sample",
+      "email": "user0096@example.com",
+      "plan": "free",
+      "created_at": "2025-01-13T08:00:00Z",
+      "address": {
+        "line1": "96 Example Street",
+        "city": "Riverton",
+        "postcode": "EX6 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 92.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0097",
+      "name": "Dennis Test",
+      "email": "user0097@example.com",
+      "plan": "free",
+      "created_at": "2025-02-14T08:00:00Z",
+      "address": {
+        "line1": "97 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX7 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 65.1,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0098",
+      "name": "Frances Demo",
+      "email": "user0098@example.com",
+      "plan": "team",
+      "created_at": "2025-03-15T08:00:00Z",
+      "address": {
+        "line1": "98 Example Street",
+        "city": "Hillview",
+        "postcode": "EX8 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 50,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0099",
+      "name": "Ken Placeholder",
+      "email": "user0099@example.com",
+      "plan": "free",
+      "created_at": "2025-04-16T08:00:00Z",
+      "address": {
+        "line1": "99 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX0 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 36.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0100",
+      "name": "Ada Example",
+      "email": "user0100@example.com",
+      "plan": "team",
+      "created_at": "2025-05-17T08:00:00Z",
+      "address": {
+        "line1": "100 Example Street",
+        "city": "Springfield",
+        "postcode": "EX1 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 91.5,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0101",
+      "name": "Alan Sample",
+      "email": "user0101@example.com",
+      "plan": "free",
+      "created_at": "2025-06-18T08:00:00Z",
+      "address": {
+        "line1": "101 Example Street",
+        "city": "Riverton",
+        "postcode": "EX2 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 66.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0102",
+      "name": "Grace Test",
+      "email": "user0102@example.com",
+      "plan": "team",
+      "created_at": "2025-07-19T08:00:00Z",
+      "address": {
+        "line1": "102 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX3 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 17.4,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0103",
+      "name": "Linus Demo",
+      "email": "user0103@example.com",
+      "plan": "free",
+      "created_at": "2025-08-20T08:00:00Z",
+      "address": {
+        "line1": "103 Example Street",
+        "city": "Hillview",
+        "postcode": "EX4 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 49.2,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0104",
+      "name": "Barbara Placeholder",
+      "email": "user0104@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-09-21T08:00:00Z",
+      "address": {
+        "line1": "104 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX5 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 53.4,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0105",
+      "name": "Edsger Example",
+      "email": "user0105@example.com",
+      "plan": "team",
+      "created_at": "2025-10-22T08:00:00Z",
+      "address": {
+        "line1": "105 Example Street",
+        "city": "Springfield",
+        "postcode": "EX6 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 64.3,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0106",
+      "name": "Margaret Sample",
+      "email": "user0106@example.com",
+      "plan": "pro",
+      "created_at": "2025-11-23T08:00:00Z",
+      "address": {
+        "line1": "106 Example Street",
+        "city": "Riverton",
+        "postcode": "EX7 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 68.5,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0107",
+      "name": "Dennis Test",
+      "email": "user0107@example.com",
+      "plan": "free",
+      "created_at": "2025-12-24T08:00:00Z",
+      "address": {
+        "line1": "107 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX8 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 45.7,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0108",
+      "name": "Frances Demo",
+      "email": "user0108@example.com",
+      "plan": "free",
+      "created_at": "2025-01-25T08:00:00Z",
+      "address": {
+        "line1": "108 Example Street",
+        "city": "Hillview",
+        "postcode": "EX0 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 66.5,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0109",
+      "name": "Ken Placeholder",
+      "email": "user0109@example.com",
+      "plan": "free",
+      "created_at": "2025-02-26T08:00:00Z",
+      "address": {
+        "line1": "109 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX1 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 70.4,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0110",
+      "name": "Ada Example",
+      "email": "user0110@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-03-27T08:00:00Z",
+      "address": {
+        "line1": "110 Example Street",
+        "city": "Springfield",
+        "postcode": "EX2 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 22.5,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0111",
+      "name": "Alan Sample",
+      "email": "user0111@example.com",
+      "plan": "free",
+      "created_at": "2025-04-28T08:00:00Z",
+      "address": {
+        "line1": "111 Example Street",
+        "city": "Riverton",
+        "postcode": "EX3 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 36.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0112",
+      "name": "Grace Test",
+      "email": "user0112@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-01T08:00:00Z",
+      "address": {
+        "line1": "112 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX4 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 37.7,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0113",
+      "name": "Linus Demo",
+      "email": "user0113@example.com",
+      "plan": "pro",
+      "created_at": "2025-06-02T08:00:00Z",
+      "address": {
+        "line1": "113 Example Street",
+        "city": "Hillview",
+        "postcode": "EX5 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 50.9,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0114",
+      "name": "Barbara Placeholder",
+      "email": "user0114@example.com",
+      "plan": "team",
+      "created_at": "2025-07-03T08:00:00Z",
+      "address": {
+        "line1": "114 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX6 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 42.3,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0115",
+      "name": "Edsger Example",
+      "email": "user0115@example.com",
+      "plan": "free",
+      "created_at": "2025-08-04T08:00:00Z",
+      "address": {
+        "line1": "115 Example Street",
+        "city": "Springfield",
+        "postcode": "EX7 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 57.1,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0116",
+      "name": "Margaret Sample",
+      "email": "user0116@example.com",
+      "plan": "team",
+      "created_at": "2025-09-05T08:00:00Z",
+      "address": {
+        "line1": "116 Example Street",
+        "city": "Riverton",
+        "postcode": "EX8 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 34.7,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0117",
+      "name": "Dennis Test",
+      "email": "user0117@example.com",
+      "plan": "pro",
+      "created_at": "2025-10-06T08:00:00Z",
+      "address": {
+        "line1": "117 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX0 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 60.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0118",
+      "name": "Frances Demo",
+      "email": "user0118@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-11-07T08:00:00Z",
+      "address": {
+        "line1": "118 Example Street",
+        "city": "Hillview",
+        "postcode": "EX1 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 5.4,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0119",
+      "name": "Ken Placeholder",
+      "email": "user0119@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-12-08T08:00:00Z",
+      "address": {
+        "line1": "119 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX2 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 88.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0120",
+      "name": "Ada Example",
+      "email": "user0120@example.com",
+      "plan": "free",
+      "created_at": "2025-01-09T08:00:00Z",
+      "address": {
+        "line1": "120 Example Street",
+        "city": "Springfield",
+        "postcode": "EX3 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 36.7,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0121",
+      "name": "Alan Sample",
+      "email": "user0121@example.com",
+      "plan": "pro",
+      "created_at": "2025-02-10T08:00:00Z",
+      "address": {
+        "line1": "121 Example Street",
+        "city": "Riverton",
+        "postcode": "EX4 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 1.7,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0122",
+      "name": "Grace Test",
+      "email": "user0122@example.com",
+      "plan": "pro",
+      "created_at": "2025-03-11T08:00:00Z",
+      "address": {
+        "line1": "122 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX5 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 97.2,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0123",
+      "name": "Linus Demo",
+      "email": "user0123@example.com",
+      "plan": "free",
+      "created_at": "2025-04-12T08:00:00Z",
+      "address": {
+        "line1": "123 Example Street",
+        "city": "Hillview",
+        "postcode": "EX6 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 19.7,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0124",
+      "name": "Barbara Placeholder",
+      "email": "user0124@example.com",
+      "plan": "free",
+      "created_at": "2025-05-13T08:00:00Z",
+      "address": {
+        "line1": "124 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX7 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 0.9,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0125",
+      "name": "Edsger Example",
+      "email": "user0125@example.com",
+      "plan": "team",
+      "created_at": "2025-06-14T08:00:00Z",
+      "address": {
+        "line1": "125 Example Street",
+        "city": "Springfield",
+        "postcode": "EX8 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 46.3,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0126",
+      "name": "Margaret Sample",
+      "email": "user0126@example.com",
+      "plan": "pro",
+      "created_at": "2025-07-15T08:00:00Z",
+      "address": {
+        "line1": "126 Example Street",
+        "city": "Riverton",
+        "postcode": "EX0 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 76.7,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0127",
+      "name": "Dennis Test",
+      "email": "user0127@example.com",
+      "plan": "free",
+      "created_at": "2025-08-16T08:00:00Z",
+      "address": {
+        "line1": "127 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX1 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 52.4,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0128",
+      "name": "Frances Demo",
+      "email": "user0128@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-09-17T08:00:00Z",
+      "address": {
+        "line1": "128 Example Street",
+        "city": "Hillview",
+        "postcode": "EX2 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 77.1,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0129",
+      "name": "Ken Placeholder",
+      "email": "user0129@example.com",
+      "plan": "free",
+      "created_at": "2025-10-18T08:00:00Z",
+      "address": {
+        "line1": "129 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX3 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 61.8,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0130",
+      "name": "Ada Example",
+      "email": "user0130@example.com",
+      "plan": "team",
+      "created_at": "2025-11-19T08:00:00Z",
+      "address": {
+        "line1": "130 Example Street",
+        "city": "Springfield",
+        "postcode": "EX4 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 7.5,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0131",
+      "name": "Alan Sample",
+      "email": "user0131@example.com",
+      "plan": "pro",
+      "created_at": "2025-12-20T08:00:00Z",
+      "address": {
+        "line1": "131 Example Street",
+        "city": "Riverton",
+        "postcode": "EX5 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 32.4,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0132",
+      "name": "Grace Test",
+      "email": "user0132@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-01-21T08:00:00Z",
+      "address": {
+        "line1": "132 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX6 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 34.2,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0133",
+      "name": "Linus Demo",
+      "email": "user0133@example.com",
+      "plan": "free",
+      "created_at": "2025-02-22T08:00:00Z",
+      "address": {
+        "line1": "133 Example Street",
+        "city": "Hillview",
+        "postcode": "EX7 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 90.1,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0134",
+      "name": "Barbara Placeholder",
+      "email": "user0134@example.com",
+      "plan": "team",
+      "created_at": "2025-03-23T08:00:00Z",
+      "address": {
+        "line1": "134 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX8 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 42,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0135",
+      "name": "Edsger Example",
+      "email": "user0135@example.com",
+      "plan": "team",
+      "created_at": "2025-04-24T08:00:00Z",
+      "address": {
+        "line1": "135 Example Street",
+        "city": "Springfield",
+        "postcode": "EX0 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 25.3,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0136",
+      "name": "Margaret Sample",
+      "email": "user0136@example.com",
+      "plan": "free",
+      "created_at": "2025-05-25T08:00:00Z",
+      "address": {
+        "line1": "136 Example Street",
+        "city": "Riverton",
+        "postcode": "EX1 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 74.6,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0137",
+      "name": "Dennis Test",
+      "email": "user0137@example.com",
+      "plan": "team",
+      "created_at": "2025-06-26T08:00:00Z",
+      "address": {
+        "line1": "137 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX2 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 81,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0138",
+      "name": "Frances Demo",
+      "email": "user0138@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-07-27T08:00:00Z",
+      "address": {
+        "line1": "138 Example Street",
+        "city": "Hillview",
+        "postcode": "EX3 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 9.6,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0139",
+      "name": "Ken Placeholder",
+      "email": "user0139@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-08-28T08:00:00Z",
+      "address": {
+        "line1": "139 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX4 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 75.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0140",
+      "name": "Ada Example",
+      "email": "user0140@example.com",
+      "plan": "pro",
+      "created_at": "2025-09-01T08:00:00Z",
+      "address": {
+        "line1": "140 Example Street",
+        "city": "Springfield",
+        "postcode": "EX5 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 37.2,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0141",
+      "name": "Alan Sample",
+      "email": "user0141@example.com",
+      "plan": "pro",
+      "created_at": "2025-10-02T08:00:00Z",
+      "address": {
+        "line1": "141 Example Street",
+        "city": "Riverton",
+        "postcode": "EX6 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 54.9,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0142",
+      "name": "Grace Test",
+      "email": "user0142@example.com",
+      "plan": "team",
+      "created_at": "2025-11-03T08:00:00Z",
+      "address": {
+        "line1": "142 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX7 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 31.2,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0143",
+      "name": "Linus Demo",
+      "email": "user0143@example.com",
+      "plan": "free",
+      "created_at": "2025-12-04T08:00:00Z",
+      "address": {
+        "line1": "143 Example Street",
+        "city": "Hillview",
+        "postcode": "EX8 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 11.5,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0144",
+      "name": "Barbara Placeholder",
+      "email": "user0144@example.com",
+      "plan": "pro",
+      "created_at": "2025-01-05T08:00:00Z",
+      "address": {
+        "line1": "144 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX0 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 35.6,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0145",
+      "name": "Edsger Example",
+      "email": "user0145@example.com",
+      "plan": "team",
+      "created_at": "2025-02-06T08:00:00Z",
+      "address": {
+        "line1": "145 Example Street",
+        "city": "Springfield",
+        "postcode": "EX1 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 0.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0146",
+      "name": "Margaret Sample",
+      "email": "user0146@example.com",
+      "plan": "free",
+      "created_at": "2025-03-07T08:00:00Z",
+      "address": {
+        "line1": "146 Example Street",
+        "city": "Riverton",
+        "postcode": "EX2 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 28.7,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0147",
+      "name": "Dennis Test",
+      "email": "user0147@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-04-08T08:00:00Z",
+      "address": {
+        "line1": "147 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX3 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 80.6,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0148",
+      "name": "Frances Demo",
+      "email": "user0148@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-09T08:00:00Z",
+      "address": {
+        "line1": "148 Example Street",
+        "city": "Hillview",
+        "postcode": "EX4 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 12.4,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0149",
+      "name": "Ken Placeholder",
+      "email": "user0149@example.com",
+      "plan": "free",
+      "created_at": "2025-06-10T08:00:00Z",
+      "address": {
+        "line1": "149 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX5 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 13.4,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0150",
+      "name": "Ada Example",
+      "email": "user0150@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-07-11T08:00:00Z",
+      "address": {
+        "line1": "150 Example Street",
+        "city": "Springfield",
+        "postcode": "EX6 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 25.6,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0151",
+      "name": "Alan Sample",
+      "email": "user0151@example.com",
+      "plan": "pro",
+      "created_at": "2025-08-12T08:00:00Z",
+      "address": {
+        "line1": "151 Example Street",
+        "city": "Riverton",
+        "postcode": "EX7 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 61.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0152",
+      "name": "Grace Test",
+      "email": "user0152@example.com",
+      "plan": "free",
+      "created_at": "2025-09-13T08:00:00Z",
+      "address": {
+        "line1": "152 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX8 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 56.7,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0153",
+      "name": "Linus Demo",
+      "email": "user0153@example.com",
+      "plan": "pro",
+      "created_at": "2025-10-14T08:00:00Z",
+      "address": {
+        "line1": "153 Example Street",
+        "city": "Hillview",
+        "postcode": "EX0 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 49.5,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0154",
+      "name": "Barbara Placeholder",
+      "email": "user0154@example.com",
+      "plan": "pro",
+      "created_at": "2025-11-15T08:00:00Z",
+      "address": {
+        "line1": "154 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX1 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 57.4,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0155",
+      "name": "Edsger Example",
+      "email": "user0155@example.com",
+      "plan": "pro",
+      "created_at": "2025-12-16T08:00:00Z",
+      "address": {
+        "line1": "155 Example Street",
+        "city": "Springfield",
+        "postcode": "EX2 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 77.7,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0156",
+      "name": "Margaret Sample",
+      "email": "user0156@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-01-17T08:00:00Z",
+      "address": {
+        "line1": "156 Example Street",
+        "city": "Riverton",
+        "postcode": "EX3 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 45,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0157",
+      "name": "Dennis Test",
+      "email": "user0157@example.com",
+      "plan": "free",
+      "created_at": "2025-02-18T08:00:00Z",
+      "address": {
+        "line1": "157 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX4 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 9.6,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0158",
+      "name": "Frances Demo",
+      "email": "user0158@example.com",
+      "plan": "team",
+      "created_at": "2025-03-19T08:00:00Z",
+      "address": {
+        "line1": "158 Example Street",
+        "city": "Hillview",
+        "postcode": "EX5 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 31,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0159",
+      "name": "Ken Placeholder",
+      "email": "user0159@example.com",
+      "plan": "pro",
+      "created_at": "2025-04-20T08:00:00Z",
+      "address": {
+        "line1": "159 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX6 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 23.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0160",
+      "name": "Ada Example",
+      "email": "user0160@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-21T08:00:00Z",
+      "address": {
+        "line1": "160 Example Street",
+        "city": "Springfield",
+        "postcode": "EX7 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 6.7,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0161",
+      "name": "Alan Sample",
+      "email": "user0161@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-06-22T08:00:00Z",
+      "address": {
+        "line1": "161 Example Street",
+        "city": "Riverton",
+        "postcode": "EX8 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 39.3,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0162",
+      "name": "Grace Test",
+      "email": "user0162@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-07-23T08:00:00Z",
+      "address": {
+        "line1": "162 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX0 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 30.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0163",
+      "name": "Linus Demo",
+      "email": "user0163@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-08-24T08:00:00Z",
+      "address": {
+        "line1": "163 Example Street",
+        "city": "Hillview",
+        "postcode": "EX1 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 24.7,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0164",
+      "name": "Barbara Placeholder",
+      "email": "user0164@example.com",
+      "plan": "free",
+      "created_at": "2025-09-25T08:00:00Z",
+      "address": {
+        "line1": "164 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX2 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 47.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0165",
+      "name": "Edsger Example",
+      "email": "user0165@example.com",
+      "plan": "team",
+      "created_at": "2025-10-26T08:00:00Z",
+      "address": {
+        "line1": "165 Example Street",
+        "city": "Springfield",
+        "postcode": "EX3 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 35.2,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0166",
+      "name": "Margaret Sample",
+      "email": "user0166@example.com",
+      "plan": "team",
+      "created_at": "2025-11-27T08:00:00Z",
+      "address": {
+        "line1": "166 Example Street",
+        "city": "Riverton",
+        "postcode": "EX4 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 82.1,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0167",
+      "name": "Dennis Test",
+      "email": "user0167@example.com",
+      "plan": "pro",
+      "created_at": "2025-12-28T08:00:00Z",
+      "address": {
+        "line1": "167 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX5 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 57.6,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0168",
+      "name": "Frances Demo",
+      "email": "user0168@example.com",
+      "plan": "team",
+      "created_at": "2025-01-01T08:00:00Z",
+      "address": {
+        "line1": "168 Example Street",
+        "city": "Hillview",
+        "postcode": "EX6 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 15.5,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0169",
+      "name": "Ken Placeholder",
+      "email": "user0169@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-02-02T08:00:00Z",
+      "address": {
+        "line1": "169 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX7 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 10.2,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0170",
+      "name": "Ada Example",
+      "email": "user0170@example.com",
+      "plan": "team",
+      "created_at": "2025-03-03T08:00:00Z",
+      "address": {
+        "line1": "170 Example Street",
+        "city": "Springfield",
+        "postcode": "EX8 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 90.8,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0171",
+      "name": "Alan Sample",
+      "email": "user0171@example.com",
+      "plan": "team",
+      "created_at": "2025-04-04T08:00:00Z",
+      "address": {
+        "line1": "171 Example Street",
+        "city": "Riverton",
+        "postcode": "EX0 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 39.2,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0172",
+      "name": "Grace Test",
+      "email": "user0172@example.com",
+      "plan": "team",
+      "created_at": "2025-05-05T08:00:00Z",
+      "address": {
+        "line1": "172 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX1 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 88,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0173",
+      "name": "Linus Demo",
+      "email": "user0173@example.com",
+      "plan": "pro",
+      "created_at": "2025-06-06T08:00:00Z",
+      "address": {
+        "line1": "173 Example Street",
+        "city": "Hillview",
+        "postcode": "EX2 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 66,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0174",
+      "name": "Barbara Placeholder",
+      "email": "user0174@example.com",
+      "plan": "pro",
+      "created_at": "2025-07-07T08:00:00Z",
+      "address": {
+        "line1": "174 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX3 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 28.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0175",
+      "name": "Edsger Example",
+      "email": "user0175@example.com",
+      "plan": "free",
+      "created_at": "2025-08-08T08:00:00Z",
+      "address": {
+        "line1": "175 Example Street",
+        "city": "Springfield",
+        "postcode": "EX4 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 67.1,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0176",
+      "name": "Margaret Sample",
+      "email": "user0176@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-09-09T08:00:00Z",
+      "address": {
+        "line1": "176 Example Street",
+        "city": "Riverton",
+        "postcode": "EX5 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 12.9,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0177",
+      "name": "Dennis Test",
+      "email": "user0177@example.com",
+      "plan": "free",
+      "created_at": "2025-10-10T08:00:00Z",
+      "address": {
+        "line1": "177 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX6 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 21.9,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0178",
+      "name": "Frances Demo",
+      "email": "user0178@example.com",
+      "plan": "team",
+      "created_at": "2025-11-11T08:00:00Z",
+      "address": {
+        "line1": "178 Example Street",
+        "city": "Hillview",
+        "postcode": "EX7 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 50.7,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0179",
+      "name": "Ken Placeholder",
+      "email": "user0179@example.com",
+      "plan": "team",
+      "created_at": "2025-12-12T08:00:00Z",
+      "address": {
+        "line1": "179 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX8 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 6.1,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0180",
+      "name": "Ada Example",
+      "email": "user0180@example.com",
+      "plan": "pro",
+      "created_at": "2025-01-13T08:00:00Z",
+      "address": {
+        "line1": "180 Example Street",
+        "city": "Springfield",
+        "postcode": "EX0 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 33.8,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0181",
+      "name": "Alan Sample",
+      "email": "user0181@example.com",
+      "plan": "free",
+      "created_at": "2025-02-14T08:00:00Z",
+      "address": {
+        "line1": "181 Example Street",
+        "city": "Riverton",
+        "postcode": "EX1 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 49.9,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0182",
+      "name": "Grace Test",
+      "email": "user0182@example.com",
+      "plan": "team",
+      "created_at": "2025-03-15T08:00:00Z",
+      "address": {
+        "line1": "182 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX2 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 25.8,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0183",
+      "name": "Linus Demo",
+      "email": "user0183@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-04-16T08:00:00Z",
+      "address": {
+        "line1": "183 Example Street",
+        "city": "Hillview",
+        "postcode": "EX3 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 66.6,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0184",
+      "name": "Barbara Placeholder",
+      "email": "user0184@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-05-17T08:00:00Z",
+      "address": {
+        "line1": "184 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX4 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 65.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0185",
+      "name": "Edsger Example",
+      "email": "user0185@example.com",
+      "plan": "team",
+      "created_at": "2025-06-18T08:00:00Z",
+      "address": {
+        "line1": "185 Example Street",
+        "city": "Springfield",
+        "postcode": "EX5 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 38.5,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0186",
+      "name": "Margaret Sample",
+      "email": "user0186@example.com",
+      "plan": "free",
+      "created_at": "2025-07-19T08:00:00Z",
+      "address": {
+        "line1": "186 Example Street",
+        "city": "Riverton",
+        "postcode": "EX6 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 16.2,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0187",
+      "name": "Dennis Test",
+      "email": "user0187@example.com",
+      "plan": "free",
+      "created_at": "2025-08-20T08:00:00Z",
+      "address": {
+        "line1": "187 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX7 5AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 78.6,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0188",
+      "name": "Frances Demo",
+      "email": "user0188@example.com",
+      "plan": "pro",
+      "created_at": "2025-09-21T08:00:00Z",
+      "address": {
+        "line1": "188 Example Street",
+        "city": "Hillview",
+        "postcode": "EX8 6AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 76.6,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0189",
+      "name": "Ken Placeholder",
+      "email": "user0189@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-10-22T08:00:00Z",
+      "address": {
+        "line1": "189 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX0 0AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 87.3,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0190",
+      "name": "Ada Example",
+      "email": "user0190@example.com",
+      "plan": "team",
+      "created_at": "2025-11-23T08:00:00Z",
+      "address": {
+        "line1": "190 Example Street",
+        "city": "Springfield",
+        "postcode": "EX1 1AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 51.4,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0191",
+      "name": "Alan Sample",
+      "email": "user0191@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-12-24T08:00:00Z",
+      "address": {
+        "line1": "191 Example Street",
+        "city": "Riverton",
+        "postcode": "EX2 2AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 36.8,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0192",
+      "name": "Grace Test",
+      "email": "user0192@example.com",
+      "plan": "free",
+      "created_at": "2025-01-25T08:00:00Z",
+      "address": {
+        "line1": "192 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX3 3AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 56.3,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0193",
+      "name": "Linus Demo",
+      "email": "user0193@example.com",
+      "plan": "pro",
+      "created_at": "2025-02-26T08:00:00Z",
+      "address": {
+        "line1": "193 Example Street",
+        "city": "Hillview",
+        "postcode": "EX4 4AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 97.2,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0194",
+      "name": "Barbara Placeholder",
+      "email": "user0194@example.com",
+      "plan": "free",
+      "created_at": "2025-03-27T08:00:00Z",
+      "address": {
+        "line1": "194 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX5 5AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 70.4,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0195",
+      "name": "Edsger Example",
+      "email": "user0195@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-04-28T08:00:00Z",
+      "address": {
+        "line1": "195 Example Street",
+        "city": "Springfield",
+        "postcode": "EX6 6AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 5.9,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    },
+    {
+      "id": "cus_0196",
+      "name": "Margaret Sample",
+      "email": "user0196@example.com",
+      "plan": "pro",
+      "created_at": "2025-05-01T08:00:00Z",
+      "address": {
+        "line1": "196 Example Street",
+        "city": "Riverton",
+        "postcode": "EX7 0AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 43.8,
+        "tags": [
+          "synthetic",
+          "cohort-1"
+        ]
+      }
+    },
+    {
+      "id": "cus_0197",
+      "name": "Dennis Test",
+      "email": "user0197@example.com",
+      "plan": "free",
+      "created_at": "2025-06-02T08:00:00Z",
+      "address": {
+        "line1": "197 Example Street",
+        "city": "Lakeside",
+        "postcode": "EX8 1AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 95,
+        "tags": [
+          "synthetic",
+          "cohort-2"
+        ]
+      }
+    },
+    {
+      "id": "cus_0198",
+      "name": "Frances Demo",
+      "email": "user0198@example.com",
+      "plan": "enterprise",
+      "created_at": "2025-07-03T08:00:00Z",
+      "address": {
+        "line1": "198 Example Street",
+        "city": "Hillview",
+        "postcode": "EX0 2AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "dark",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 74.3,
+        "tags": [
+          "synthetic",
+          "cohort-3"
+        ]
+      }
+    },
+    {
+      "id": "cus_0199",
+      "name": "Ken Placeholder",
+      "email": "user0199@example.com",
+      "plan": "team",
+      "created_at": "2025-08-04T08:00:00Z",
+      "address": {
+        "line1": "199 Example Street",
+        "city": "Brookfield",
+        "postcode": "EX1 3AB"
+      },
+      "preferences": {
+        "newsletter": false,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 91.7,
+        "tags": [
+          "synthetic",
+          "cohort-4"
+        ]
+      }
+    },
+    {
+      "id": "cus_0200",
+      "name": "Ada Example",
+      "email": "user0200@example.com",
+      "plan": "free",
+      "created_at": "2025-09-05T08:00:00Z",
+      "address": {
+        "line1": "200 Example Street",
+        "city": "Springfield",
+        "postcode": "EX2 4AB"
+      },
+      "preferences": {
+        "newsletter": true,
+        "theme": "light",
+        "locale": "en-GB"
+      },
+      "metadata": {
+        "source": "import",
+        "score": 27.4,
+        "tags": [
+          "synthetic",
+          "cohort-0"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "total": 200,
+    "page": 1,
+    "per_page": 200,
+    "request_id": "req_7f3a9c"
+  },
+  "debug": {
+    "timing_ms": {
+      "db": 41,
+      "serialize": 9
+    },
+    "server": "api-3",
+    "cache": "miss"
+  }
+}
