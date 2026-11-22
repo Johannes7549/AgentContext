@@ -14,5 +14,5 @@
       "@agentcontext/mcp-server": ["../apps/mcp-server/src/index.ts"]
     }
   },
-  "include": ["integration", "e2e", "../vitest.config.ts", "../vitest.shared.ts"]
+  "include": ["integration", "e2e", "setup", "../vitest.config.ts", "../vitest.shared.ts"]
 }

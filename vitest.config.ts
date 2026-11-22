@@ -20,6 +20,8 @@ export default defineConfig({
           name: "integration",
           include: ["tests/integration/**/*.test.ts"],
           environment: "node",
+          globalSetup: ["tests/setup/build.ts"],
+          testTimeout: 30_000,
         },
       },
       {
@@ -28,6 +30,8 @@ export default defineConfig({
           name: "e2e",
           include: ["tests/e2e/**/*.test.ts"],
           environment: "node",
+          globalSetup: ["tests/setup/build.ts"],
+          testTimeout: 60_000,
         },
       },
     ],
