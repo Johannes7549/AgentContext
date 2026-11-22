@@ -91,10 +91,12 @@ describe("normalize — text", () => {
     expect(caller.contentTypeSource).toBe("caller");
   });
 
-  it("falls back to unknown without a detector", () => {
-    const ctx = normalize({ content: "hello", source: "s" });
-    expect(ctx.contentType).toBe("unknown");
+  it("uses the built-in detector by default", () => {
+    const ctx = normalize({ content: '{"a":[1,2]}', source: "s" });
+    expect(ctx.contentType).toBe("json");
     expect(ctx.contentTypeSource).toBe("detected");
+    expect(ctx.json).toEqual({ a: [1, 2] });
+    expect(normalize({ content: "", source: "s" }).contentType).toBe("unknown");
   });
 
   it("handles empty content", () => {

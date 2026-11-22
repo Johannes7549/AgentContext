@@ -14,6 +14,7 @@ import {
   sha256Hex,
   utf8ByteLength,
 } from "@agentcontext/shared";
+import { detectContentType } from "./detector.js";
 
 /** Content-type detector plugged in by the analyzer (AC-010). Must be deterministic. */
 export type ContentTypeDetector = (text: string) => {
@@ -22,7 +23,7 @@ export type ContentTypeDetector = (text: string) => {
 };
 
 export interface NormalizeOptions {
-  /** Used when the caller did not specify a content type. Without it, text is "unknown". */
+  /** Used when the caller did not specify a content type. Defaults to the built-in `detectContentType`. */
   detectContentType?: ContentTypeDetector;
   /** Reject inputs whose original exceeds this many UTF-8 bytes. */
   maxInputBytes?: number;
@@ -70,7 +71,7 @@ function normalizeText(
     contentType = parsed.contentType;
     contentTypeSource = "caller";
   } else {
-    contentType = options.detectContentType?.(text).contentType ?? "unknown";
+    contentType = (options.detectContentType ?? detectContentType)(text).contentType;
     contentTypeSource = "detected";
   }
 
