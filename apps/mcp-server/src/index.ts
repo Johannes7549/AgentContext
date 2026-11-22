@@ -19,5 +19,15 @@ export {
   type RuntimeOptions,
 } from "./runtime.js";
 export { createServer, type Registrar, type StartOptions, startStdioServer } from "./server.js";
-export { defaultRegistrars } from "./tools/index.js";
+export {
+  collectStats,
+  defaultRegistrars,
+  formatOptimizeResult,
+  formatRetrieveResult,
+  formatStats,
+  GUIDELINES,
+  OPTIMIZE_CONTEXT_DESCRIPTION,
+  RETRIEVE_CONTEXT_DESCRIPTION,
+  STATS_DESCRIPTION,
+} from "./tools/index.js";
 export { SERVER_NAME, SERVER_VERSION } from "./version.js";

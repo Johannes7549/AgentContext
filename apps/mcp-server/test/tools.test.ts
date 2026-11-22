@@ -37,7 +37,7 @@ async function connect(sessionId = "sess-a", dir?: string) {
 }
 
 describe("tools/list", () => {
-  it("lists optimize_context and retrieve_context with schemas and annotations", async () => {
+  it("lists every tool with schemas and annotations", async () => {
     const { connection } = await connect();
     const response = (await connection.request("tools/list")) as {
       result: {
@@ -51,7 +51,11 @@ describe("tools/list", () => {
       };
     };
     const tools = response.result.tools;
-    expect(tools.map((t) => t.name)).toEqual(["optimize_context", "retrieve_context"]);
+    expect(tools.map((t) => t.name)).toEqual([
+      "optimize_context",
+      "retrieve_context",
+      "get_optimization_stats",
+    ]);
     for (const tool of tools) {
       expect(tool.description.length).toBeLessThan(400);
       expect(tool.outputSchema).toBeDefined();
