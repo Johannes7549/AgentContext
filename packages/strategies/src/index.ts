@@ -1,6 +1,21 @@
 /**
- * @agentcontext/strategies — Deterministic compression strategies.
- *
- * Placeholder entry point created by AC-004. Real exports are added by later tasks.
+ * @agentcontext/strategies — deterministic compression strategies (roadmap §5).
+ * Strategies are pure: no I/O, clock, randomness or LLM calls (ADR-0001).
  */
 export const packageName = "@agentcontext/strategies" as const;
+
+export {
+  jsonPruner,
+  MAX_CHILD_SEGMENTS_PER_CONTAINER,
+  MAX_SUPPORTED_DEPTH,
+} from "./json-pruner.js";
+export {
+  defineStrategy,
+  describeRanges,
+  estimateTokens,
+  marker,
+  type Plan,
+  SegmentIds,
+  type StrategyDefinition,
+  toRanges,
+} from "./util.js";

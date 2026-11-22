@@ -1,0 +1,26 @@
+{
+  "data": {
+    "customers": [
+      {
+        "id": "cus_001",
+        "name": "Ada Lovelace",
+        "email": "ada@example.com",
+        "address": { "street": "1 Example Road", "city": "London", "postcode": "EX1 1AA" }
+      },
+      {
+        "id": "cus_002",
+        "name": "Alan Turing",
+        "email": "alan@example.com",
+        "address": { "street": "2 Sample Street", "city": "Manchester", "postcode": "EX2 2BB" }
+      },
+      {
+        "id": "cus_003",
+        "name": "Grace Hopper",
+        "email": "grace@example.com",
+        "address": { "street": "3 Test Avenue", "city": "Arlington", "postcode": "EX3 3CC" }
+      }
+    ]
+  },
+  "meta": { "total": 3, "page": 1, "request_id": "req_abc123" },
+  "debug": { "timing_ms": { "db": 12, "render": 4 }, "server": "api-7", "cache": "miss" }
+}
