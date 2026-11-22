@@ -26,6 +26,7 @@ import {
 } from "@agentcontext/shared";
 import { countTokens, tokenizerInfo } from "@agentcontext/tokenization";
 import { analyze } from "./analyzer.js";
+import { budgetWarning } from "./budget.js";
 import { newContextId, newVariantId } from "./ids.js";
 import { normalize } from "./normalizer.js";
 import { selectStrategy } from "./selector.js";
@@ -134,7 +135,7 @@ export function createEngine(deps: EngineDependencies): AgentContextEngine {
         strategy: "passthrough",
         recoveryAvailable: false,
         omittedSegments: [],
-        warnings,
+        warnings: withBudget(warnings, options, originalTokens, originalTokens),
       };
       await record(
         event(eventType, null, "passthrough", result.metrics, config.now()),
@@ -270,7 +271,7 @@ export function createEngine(deps: EngineDependencies): AgentContextEngine {
       strategy: strategy.name,
       recoveryAvailable,
       omittedSegments: segments,
-      warnings,
+      warnings: withBudget(warnings, options, originalTokens, optimizedTokens),
     };
     await record(
       event("optimized", contextId, strategy.name, result.metrics, config.now()),
@@ -427,6 +428,17 @@ function event(
     processingTimeMs: m.processingTimeMs,
     createdAt,
   };
+}
+
+/** Append a BUDGET_EXCEEDED warning when the returned content misses the budget (R9). */
+function withBudget(
+  warnings: Warning[],
+  options: CompressionOptions,
+  originalTokens: number,
+  outputTokens: number,
+): Warning[] {
+  const budget = budgetWarning(options, originalTokens, outputTokens);
+  return budget ? [...warnings, budget] : warnings;
 }
 
 function warning(code: Warning["code"], message: string): Warning {

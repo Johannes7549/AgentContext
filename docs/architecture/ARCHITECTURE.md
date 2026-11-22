@@ -101,10 +101,11 @@ ContextInput
 | Situation | Returned content | `strategy` | Warning |
 |---|---|---|---|
 | Content below threshold / low benefit | Original | `passthrough` | — |
+| Content already within `maxTokens` (no explicit strategy/selection) | Original | `passthrough` | — |
 | No strategy supports the content | Original | `passthrough` | `NO_SUPPORTED_STRATEGY` (info) |
 | Output larger than tolerance | Original | `passthrough` | `NO_BENEFIT` |
 | Validation failure | Original | `passthrough` | `VALIDATION_FAILED` |
-| Budget cannot be met safely | Best safe output | strategy name | `BUDGET_EXCEEDED` |
+| Budget cannot be met safely | Best safe output (or original) | strategy name or `passthrough` | `BUDGET_EXCEEDED` (added to any result that misses `maxTokens`/`targetReduction`; nothing is truncated) |
 | Storage failure, policy `return_original` | Original | `passthrough` | `STORAGE_FAILED` |
 | Storage failure, policy `non_recoverable` | Optimized | strategy name | `STORAGE_FAILED`; `recoveryAvailable: false` |
 

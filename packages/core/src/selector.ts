@@ -6,6 +6,7 @@ import type {
   NormalizedContext,
   StrategyAnalysis,
 } from "@agentcontext/shared";
+import { meetsBudget } from "./budget.js";
 import type { StrategyRegistry } from "./strategy-registry.js";
 
 export interface SelectorConfig {
@@ -29,6 +30,7 @@ export interface CandidateReport {
 
 export type SkipReason =
   | "BELOW_THRESHOLD"
+  | "WITHIN_BUDGET"
   | "NO_SUPPORTED_STRATEGY"
   | "NO_BENEFIT"
   | "FORCED_STRATEGY_UNSUPPORTED";
@@ -46,13 +48,17 @@ const CONFIDENCE_RANK: Record<Confidence, number> = { high: 3, medium: 2, low: 1
 
 /**
  * Choose a strategy or skip (ARCHITECTURE.md §4). Deterministic: candidates are
- * ranked by confidence, then estimated saving, then registration order. No
+ * ranked by budget fit, then confidence, then estimated saving, then
+ * registration order. No
  * chaining — at most one strategy is selected.
  *
  * - A forced `options.strategy` must exist (else INVALID_INPUT is thrown) and
  *   must `supports()` the input; it bypasses the size threshold only.
  * - An explicit `options.selection` also bypasses the size threshold.
  * - A strategy whose `analyze()` throws is treated as not applicable.
+ * - With a budget (`maxTokens` / `targetReduction`), candidates expected to meet
+ *   it rank first; content already within `maxTokens` is not optimized unless
+ *   a strategy or selection is explicit.
  */
 export async function selectStrategy(
   context: NormalizedContext,
@@ -64,6 +70,20 @@ export async function selectStrategy(
   const minBenefit = options.minBenefitTokens ?? config.minBenefitTokens;
   const forced = options.strategy !== undefined ? registry.get(options.strategy) : undefined;
   const explicit = forced !== undefined || options.selection !== undefined;
+
+  if (
+    !explicit &&
+    options.maxTokens !== undefined &&
+    analysis.tokens.count <= options.maxTokens &&
+    options.targetReduction === undefined
+  ) {
+    return {
+      kind: "skip",
+      reason: "WITHIN_BUDGET",
+      message: `Content already fits maxTokens (${options.maxTokens})`,
+      candidates: [],
+    };
+  }
 
   if (!explicit && analysis.tokens.count < config.minOptimizeTokens) {
     return {
@@ -129,8 +149,12 @@ export async function selectStrategy(
     };
   }
 
+  const original = analysis.tokens.count;
+  const fits = (a: StrategyAnalysis) =>
+    meetsBudget(options, original, a.estimatedOutputTokens) ? 1 : 0;
   viable.sort(
     (a, b) =>
+      fits(b.analysis) - fits(a.analysis) ||
       CONFIDENCE_RANK[b.analysis.confidence] - CONFIDENCE_RANK[a.analysis.confidence] ||
       b.analysis.estimatedSavedTokens - a.analysis.estimatedSavedTokens ||
       a.order - b.order,
