@@ -1,6 +1,7 @@
 import {
   type CompressionOptions,
   type CompressionStrategy,
+  jsonPathResolves,
   type NormalizedContext,
   OmittedSegmentSchema,
   type ParsedLocation,
@@ -16,7 +17,7 @@ export type JsonPathResolver = (json: unknown, path: string) => boolean;
 export interface ValidatorConfig {
   /** Allowed growth of optimized vs. original tokens, as a fraction (0 = no growth). */
   sizeTolerance: number;
-  /** Resolves `json:` locations. Without one, a json location only requires parsed JSON. */
+  /** Resolves `json:` locations. Defaults to the shared JSONPath resolver (ADR-0005). */
   resolveJsonPath?: JsonPathResolver;
 }
 
@@ -73,7 +74,11 @@ export function validateOutput(input: ValidationInput, config: ValidatorConfig):
     }
     ids.add(segment.id);
 
-    const problem = checkLocation(context, segment.location, config.resolveJsonPath);
+    const problem = checkLocation(
+      context,
+      segment.location,
+      config.resolveJsonPath ?? jsonPathResolves,
+    );
     if (problem) {
       add({
         code: "UNRESOLVED_LOCATION",
@@ -128,7 +133,7 @@ export function validateOutput(input: ValidationInput, config: ValidatorConfig):
 function checkLocation(
   context: NormalizedContext,
   location: string,
-  resolveJsonPath: JsonPathResolver | undefined,
+  resolveJsonPath: JsonPathResolver,
 ): string | undefined {
   let parsed: ParsedLocation[];
   try {
@@ -151,7 +156,7 @@ function checkLocation(
 function checkBlockLocation(
   context: NormalizedContext,
   part: ParsedLocation,
-  resolveJsonPath: JsonPathResolver | undefined,
+  resolveJsonPath: JsonPathResolver,
 ): string | undefined {
   if (part.kind !== "block") return "mcp_content locations must use block:<index>/...";
   const block = context.blocks?.[part.index];
@@ -162,7 +167,7 @@ function checkBlockLocation(
 function checkPlainLocation(
   context: NormalizedContext,
   part: ParsedLocation,
-  resolveJsonPath: JsonPathResolver | undefined,
+  resolveJsonPath: JsonPathResolver,
 ): string | undefined {
   switch (part.kind) {
     case "lines":
@@ -175,7 +180,7 @@ function checkPlainLocation(
         : `offsets ${part.start}-${part.end} exceed length ${context.original.length}`;
     case "json":
       if (context.json === undefined) return "json location on content without parsed JSON";
-      if (resolveJsonPath && !resolveJsonPath(context.json, part.path)) {
+      if (!resolveJsonPath(context.json, part.path)) {
         return "json path does not resolve in the original";
       }
       return undefined;

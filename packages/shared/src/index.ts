@@ -8,6 +8,7 @@ export * from "./content.js";
 export * from "./domain.js";
 export * from "./errors.js";
 export * from "./input.js";
+export * from "./jsonpath.js";
 export * from "./logs.js";
 export * from "./markdown.js";
 export * from "./result.js";

@@ -176,3 +176,18 @@ describe("validateOutput", () => {
     expect(run(output({ omittedSegments: many })).issues).toHaveLength(50);
   });
 });
+
+describe("validateOutput — default JSON path resolver", () => {
+  it("resolves json locations against the parsed original", () => {
+    const ok = run(
+      output({ omittedSegments: [segment({ type: "json_value", location: "json:$['b']['c']" })] }),
+      { context: json },
+    );
+    const missing = run(
+      output({ omittedSegments: [segment({ type: "json_value", location: "json:$['a'][5]" })] }),
+      { context: json },
+    );
+    expect(ok.valid).toBe(true);
+    expect(codes(missing)).toEqual(["UNRESOLVED_LOCATION"]);
+  });
+});
