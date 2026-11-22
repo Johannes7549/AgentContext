@@ -76,7 +76,8 @@ export function defaultConfig(sources: ConfigSources = {}): ServerConfig {
     retrievalScope: "session",
     ttlHours: 168,
     quotaMb: 500,
-    maxInputBytes: 10 * 1024 * 1024,
+    // Below the MCP stdio transport's 10 MB message limit, so oversized input gets a clean INPUT_TOO_LARGE.
+    maxInputBytes: 8 * 1024 * 1024,
     minOptimizeTokens: 500,
     minBenefitTokens: 50,
     storageFailurePolicy: "return_original",
@@ -151,6 +152,7 @@ function applyEnv(target: Record<string, unknown>, env: NodeJS.ProcessEnv): void
   set("AGENTCONTEXT_RETRIEVAL_SCOPE", (v) => (target.retrievalScope = v));
   set("AGENTCONTEXT_TTL_HOURS", (v) => (target.ttlHours = Number(v)));
   set("AGENTCONTEXT_QUOTA_MB", (v) => (target.quotaMb = Number(v)));
+  set("AGENTCONTEXT_MAX_INPUT_BYTES", (v) => (target.maxInputBytes = Number(v)));
   set("AGENTCONTEXT_LOG_LEVEL", (v) => (target.logLevel = v));
   set(
     "AGENTCONTEXT_ALLOWED_ROOTS",
