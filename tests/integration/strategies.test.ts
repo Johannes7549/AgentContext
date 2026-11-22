@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { createEngine } from "@agentcontext/core";
 import { CompressionResultSchema, type RetrievalScope } from "@agentcontext/shared";
-import { jsonPruner, logCompressor } from "@agentcontext/strategies";
+import { duplicateEliminator, jsonPruner, logCompressor } from "@agentcontext/strategies";
 import { FallbackEstimator } from "@agentcontext/tokenization";
 import { describe, expect, it } from "vitest";
 import { MemoryStorage } from "../../packages/core/test/helpers/memory-storage.js";
@@ -16,7 +16,7 @@ function engine() {
     storage,
     engine: createEngine({
       tokenizer: new FallbackEstimator(),
-      strategies: [jsonPruner, logCompressor],
+      strategies: [jsonPruner, logCompressor, duplicateEliminator],
       storage,
     }),
   };
@@ -59,5 +59,34 @@ describe("strategies through the engine (generic validator applies)", () => {
     expect(result.content).toContain("TypeError: Cannot read properties of undefined");
     const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
     expect(recovered.status === "OK" && recovered.content).toBe(content);
+  });
+
+  it("duplicate-eliminator: collapses repeated paragraphs and log-compressor still wins on logs", async () => {
+    const { engine: e } = engine();
+    const boilerplate = [
+      "This message was generated automatically by the reporting system.",
+      "Please do not reply directly; contact the support team instead.",
+    ].join("\n");
+    const content = Array.from(
+      { length: 30 },
+      (_, i) => `Report section ${i + 1} with unique findings.\n\n${boilerplate}`,
+    ).join("\n\n");
+    const result = await e.optimize(
+      { content, contentType: "text", source: "tool:report" },
+      {},
+      scope,
+    );
+    expect(result.strategy).toBe("duplicate-eliminator");
+    expect(result.warnings).toEqual([]);
+    expect(result.omittedSegments[0]?.occurrences).toBe(30);
+    const recovered = await e.retrieve({ contextId: result.contextId as string }, scope);
+    expect(recovered.status === "OK" && recovered.content).toBe(content);
+
+    const logResult = await e.optimize(
+      { content: fixture("terminal.log"), source: "command:test" },
+      {},
+      scope,
+    );
+    expect(logResult.strategy).toBe("log-compressor");
   });
 });
