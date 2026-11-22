@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, realpathSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { CommandAdapter, FileAdapter, filterEnv } from "../src/index.js";
@@ -79,7 +79,10 @@ describe("CommandAdapter — execution", () => {
       args: ["-e", "console.log(process.cwd())"],
       cwd: "sub",
     });
-    expect(result.stdout.trim().toLowerCase()).toBe(join(root, "sub").toLowerCase());
+    // Compare resolved paths: Windows runners may report temp dirs as 8.3 short names.
+    expect(result.stdout.trim().toLowerCase()).toBe(
+      realpathSync.native(join(root, "sub")).toLowerCase(),
+    );
   });
 
   it("does not pass secrets from the environment", async () => {
