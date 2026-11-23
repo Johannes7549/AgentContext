@@ -1,5 +1,9 @@
 # AgentContext
 
+[![npm](https://img.shields.io/npm/v/@agentcontext/mcp-server)](https://www.npmjs.com/package/@agentcontext/mcp-server)
+[![Agensi](https://img.shields.io/badge/Agensi-agentcontext%20skill-4338ca)](https://www.agensi.io/skills/agentcontext)
+[![License](https://img.shields.io/npm/l/@agentcontext/mcp-server)](LICENSE)
+
 **Reversible context optimization for AI agents.** AgentContext is a
 local-first MCP server that turns oversized tool output — long test logs,
 large JSON responses, whole files, diffs, repeated content — into smaller,
@@ -12,14 +16,14 @@ can recover any omitted part exactly.
 - **Local** — no telemetry, no network; data stays in your user profile.
 - **Measured** — token counts are labelled as estimates; benchmarks include the cost of recovery.
 
-> Status: **v0.1.0 release candidate.** See [limitations](docs/limitations.md).
+> Status: **v0.1.1**, published on [npm](https://www.npmjs.com/package/@agentcontext/mcp-server) and as a skill on [Agensi](https://www.agensi.io/skills/agentcontext). See [limitations](docs/limitations.md).
 
 ## Quick start
 
 Requires Node.js ≥ 22.13.
 
 ```sh
-# Claude Code (after the npm release)
+# Claude Code
 claude mcp add agentcontext -- npx -y @agentcontext/mcp-server
 
 # from a source checkout
@@ -65,7 +69,8 @@ then `/plugin install agentcontext@agentcontext`.)
 
 The skill itself follows the open [Agent Skills](https://agentskills.io) format
 and lives in [`plugins/agentcontext/skills/agentcontext`](plugins/agentcontext/skills/agentcontext/SKILL.md),
-so other skill-compatible agents can use it too.
+so other skill-compatible agents can use it too. It is also listed on the
+[Agensi skill marketplace](https://www.agensi.io/skills/agentcontext).
 
 ## Tools
 
