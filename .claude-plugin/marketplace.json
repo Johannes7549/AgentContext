@@ -1,0 +1,18 @@
+{
+  "name": "agentcontext",
+  "description": "AgentContext: reversible context optimization for AI coding agents.",
+  "owner": {
+    "name": "Yohannes Bekele",
+    "url": "https://github.com/Johannes7549"
+  },
+  "plugins": [
+    {
+      "name": "agentcontext",
+      "source": "./plugins/agentcontext",
+      "description": "MCP server + skill that shrinks large tool outputs (logs, JSON, docs, code, diffs) and recovers omitted parts exactly.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": ["mcp", "context", "tokens", "logs"]
+    }
+  ]
+}

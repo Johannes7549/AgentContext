@@ -50,6 +50,23 @@ AssertionError: expected 118.5 to be 118.05 // Object.is equality
 Recover omitted parts (s1, s2, s3, s4) with retrieve_context {"contextId":"ctx_01M8...","selector":{"type":"segment_id","value":"<sN>"}}, or omit the selector for the full original.
 ```
 
+## Claude Code plugin and agent skill
+
+The **agentcontext** plugin installs the MCP server together with a skill that
+tells Claude when and how to use it (read long files and logs through
+AgentContext, recover omitted parts instead of re-reading):
+
+```text
+/plugin install agentcontext --marketplace Johannes7549/AgentContext
+```
+
+(On older Claude Code versions: `/plugin marketplace add Johannes7549/AgentContext`,
+then `/plugin install agentcontext@agentcontext`.)
+
+The skill itself follows the open [Agent Skills](https://agentskills.io) format
+and lives in [`plugins/agentcontext/skills/agentcontext`](plugins/agentcontext/skills/agentcontext/SKILL.md),
+so other skill-compatible agents can use it too.
+
 ## Tools
 
 | Tool | Purpose |

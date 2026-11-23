@@ -1,6 +1,29 @@
 # Claude Code integration
 
-## Add the server
+## Recommended: install the plugin
+
+The plugin bundles the MCP server and the `agentcontext` skill, which tells
+Claude when to read long files and logs through AgentContext and how to recover
+omitted parts. It works on Windows, macOS and Linux without extra setup:
+
+```text
+/plugin install agentcontext --marketplace Johannes7549/AgentContext
+```
+
+On Claude Code versions before 2.1.275:
+
+```text
+/plugin marketplace add Johannes7549/AgentContext
+/plugin install agentcontext@agentcontext
+```
+
+The plugin stores contexts with `AGENTCONTEXT_RETRIEVAL_SCOPE=workspace`, so
+content stays recoverable across sessions of the same project. To try a local
+build of the server instead of the npm package, set
+`AGENTCONTEXT_SERVER_ENTRY=/path/to/AgentContext/apps/mcp-server/dist/cli.js`
+before starting Claude Code.
+
+## Add the server manually
 
 User-wide (available in every project):
 

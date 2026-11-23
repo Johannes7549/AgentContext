@@ -1,0 +1,14 @@
+{
+  "name": "agentcontext",
+  "displayName": "AgentContext",
+  "version": "0.1.0",
+  "description": "Shrink large tool outputs (logs, JSON, docs, code, diffs) before they fill the context window, and recover any omitted part exactly. Bundles the AgentContext MCP server and a skill that tells Claude when to use it.",
+  "author": {
+    "name": "Yohannes Bekele",
+    "url": "https://github.com/Johannes7549"
+  },
+  "homepage": "https://github.com/Johannes7549/AgentContext",
+  "repository": "https://github.com/Johannes7549/AgentContext",
+  "license": "Apache-2.0",
+  "keywords": ["mcp", "context", "tokens", "logs", "json", "ai-agents", "context-engineering"]
+}
