@@ -60,7 +60,10 @@ afterAll(async () => {
 
 describe("AgentContext MCP server over stdio (official client)", () => {
   it("identifies itself and exposes tools, resources and the prompt", async () => {
-    expect(client.getServerVersion()).toMatchObject({ name: "agentcontext", version: "0.1.0" });
+    const { version } = JSON.parse(
+      readFileSync(new URL("../../apps/mcp-server/package.json", import.meta.url), "utf8"),
+    ) as { version: string };
+    expect(client.getServerVersion()).toMatchObject({ name: "agentcontext", version });
     const tools = await client.listTools();
     expect(tools.tools.map((t) => t.name).sort()).toEqual([
       "get_optimization_stats",

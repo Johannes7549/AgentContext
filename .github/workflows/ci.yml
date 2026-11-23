@@ -54,6 +54,10 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Pack and clean-install test
+        if: matrix.os == 'ubuntu-latest' && matrix.node == '24'
+        run: node scripts/pack-test.mjs
+
   audit:
     name: Dependency audit
     runs-on: ubuntu-latest

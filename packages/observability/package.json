@@ -1,9 +1,25 @@
 {
   "name": "@agentcontext/observability",
   "version": "0.0.0",
-  "private": true,
-  "description": "Event recording, metrics aggregation and redacted logging",
+  "description": "Content-free logging and statistics for AgentContext",
   "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "context",
+    "llm",
+    "token-optimization"
+  ],
+  "homepage": "https://github.com/Johannes7549/AgentContext#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johannes7549/AgentContext.git",
+    "directory": "packages/observability"
+  },
+  "bugs": {
+    "url": "https://github.com/Johannes7549/AgentContext/issues"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -11,9 +27,22 @@
       "default": "./dist/index.js"
     }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "!dist/.tsbuildinfo",
+    "!dist/**/*.map",
+    "README.md",
+    "LICENSE"
   ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsc -b",
     "typecheck": "tsc -p tsconfig.test.json",
