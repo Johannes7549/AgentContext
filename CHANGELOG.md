@@ -5,6 +5,28 @@ All notable changes are documented here. The format follows
 [Semantic Versioning](https://semver.org/). All public `@agentcontext/*`
 packages share one version.
 
+## [0.1.1] - 2026-11-23
+
+### Fixed
+
+- **Claude Code saw only metadata.** Clients such as Claude Code show the model
+  only a tool result's `structuredContent`, which in 0.1.0 held metadata but not
+  the optimized or recovered content. `structuredContent` now carries the content
+  first (`optimize_context`, `read_file`, `execute_command`, `retrieve_context`),
+  with compact omitted-segment summaries and a `recoveryHint`. In a measured
+  Claude Code run this cut a log-analysis task from 14 turns ($0.33) to 5 turns
+  ($0.09).
+
+### Added
+
+- **`agentcontext` agent skill** (open Agent Skills format) that tells agents to
+  read long files and logs through AgentContext and recover omitted parts instead
+  of re-reading.
+- **Claude Code plugin and marketplace** bundling the skill and the MCP server,
+  with a cross-platform launcher:
+  `/plugin install agentcontext --marketplace Johannes7549/AgentContext`.
+- `AGENTCONTEXT_SERVER_ENTRY` launcher override for testing a local server build.
+
 ## [0.1.0] - 2026-11-23
 
 First public release.
@@ -48,4 +70,5 @@ First public release.
 - Log compressor: stack frames under exception lines without a level keyword
   were omitted when a level policy was set (found by the benchmark suite).
 
+[0.1.1]: https://github.com/Johannes7549/AgentContext/releases/tag/v0.1.1
 [0.1.0]: https://github.com/Johannes7549/AgentContext/releases/tag/v0.1.0

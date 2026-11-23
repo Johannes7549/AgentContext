@@ -1,6 +1,6 @@
 {
   "name": "@agentcontext/retrieval",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scoped, selective recovery of original content for AgentContext",
   "license": "Apache-2.0",
   "keywords": [

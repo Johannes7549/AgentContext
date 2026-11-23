@@ -37,6 +37,18 @@ for (const dir of PUBLISHED) {
     if (!existsSync(join(root, dir, file))) problems.push(`${pkg.name} is missing ${file}`);
   }
 }
+const plugin = JSON.parse(
+  readFileSync(join(root, "plugins/agentcontext/.claude-plugin/plugin.json"), "utf8"),
+);
+if (plugin.version !== expected) problems.push(`plugin.json has version ${plugin.version}`);
+const marketplace = JSON.parse(readFileSync(join(root, ".claude-plugin/marketplace.json"), "utf8"));
+for (const entry of marketplace.plugins) {
+  if (entry.version !== expected)
+    problems.push(`marketplace entry ${entry.name} has version ${entry.version}`);
+}
+const skill = readFileSync(join(root, "plugins/agentcontext/skills/agentcontext/SKILL.md"), "utf8");
+if (!skill.includes(`version: "${expected}"`))
+  problems.push("SKILL.md metadata version does not match");
 if (!existsSync(join(root, "docs", "releases", `v${expected}.md`))) {
   problems.push(`missing release notes docs/releases/v${expected}.md`);
 }

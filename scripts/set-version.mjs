@@ -34,5 +34,23 @@ for (const dir of [".", ...PUBLISHED]) {
   writeFileSync(file, `${JSON.stringify(pkg, null, 2)}\n`);
 }
 
+// Claude Code plugin and its marketplace entry move with the packages.
+const pluginFile = join(root, "plugins/agentcontext/.claude-plugin/plugin.json");
+const plugin = JSON.parse(readFileSync(pluginFile, "utf8"));
+plugin.version = version;
+writeFileSync(pluginFile, `${JSON.stringify(plugin, null, 2)}\n`);
+
+const marketplaceFile = join(root, ".claude-plugin/marketplace.json");
+const marketplace = JSON.parse(readFileSync(marketplaceFile, "utf8"));
+for (const entry of marketplace.plugins) if (entry.name === plugin.name) entry.version = version;
+writeFileSync(marketplaceFile, `${JSON.stringify(marketplace, null, 2)}\n`);
+
+// Skill metadata version (frontmatter `metadata.version`).
+const skillFile = join(root, "plugins/agentcontext/skills/agentcontext/SKILL.md");
+const skill = readFileSync(skillFile, "utf8");
+writeFileSync(skillFile, skill.replace(/^(\s+version: )"[^"]*"/m, `$1"${version}"`));
+
 // apps/mcp-server reads its version from its package.json at runtime.
-process.stderr.write(`set version ${version} on ${PUBLISHED.length} packages\n`);
+process.stderr.write(
+  `set version ${version} on ${PUBLISHED.length} packages, the plugin and the skill\n`,
+);

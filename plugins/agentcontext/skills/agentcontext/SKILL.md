@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Requires Node.js 22.13+ and the AgentContext MCP server (npm package @agentcontext/mcp-server) connected to the agent.
 metadata:
   homepage: https://github.com/Johannes7549/AgentContext
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # AgentContext

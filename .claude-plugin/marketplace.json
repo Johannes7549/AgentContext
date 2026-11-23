@@ -10,7 +10,7 @@
       "name": "agentcontext",
       "source": "./plugins/agentcontext",
       "description": "MCP server + skill that shrinks large tool outputs (logs, JSON, docs, code, diffs) and recovers omitted parts exactly.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "productivity",
       "tags": ["mcp", "context", "tokens", "logs"]
     }
