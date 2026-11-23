@@ -69,7 +69,7 @@ describe("tools/list", () => {
 });
 
 describe("optimize_context", () => {
-  it("returns compact content with a recovery footer and metadata-only structured content", async () => {
+  it("returns compact content in both the text block and the structured result", async () => {
     const { call } = await connect();
     const result = await call("optimize_context", { content: log, source: "command:pnpm test" });
     expect(result.isError).toBeUndefined();
@@ -77,13 +77,22 @@ describe("optimize_context", () => {
     expect(text).toContain("[... s1: repeated");
     expect(text).toContain("[agentcontext] log-compressor:");
     expect(text).toContain("retrieve_context");
-    expect(result.structuredContent).toMatchObject({
+
+    // Clients such as Claude Code show only structuredContent, so it must carry the content.
+    const structured = result.structuredContent as Record<string, unknown>;
+    expect(structured).toMatchObject({
       recoveryAvailable: true,
       strategy: "log-compressor",
       metrics: { tokenCountIsExact: false },
     });
-    expect(result.structuredContent).not.toHaveProperty("content");
-    expect(JSON.stringify(result.structuredContent)).not.toContain("connection refused");
+    expect(text.startsWith(structured.content as string)).toBe(true);
+    expect(structured.content).toContain("TypeError: Cannot read properties");
+    expect(structured.recoveryHint).toContain("retrieve_context");
+    // Segment summaries stay compact: no long location lists.
+    const segments = structured.omittedSegments as Record<string, unknown>[];
+    expect(segments.length).toBeGreaterThan(0);
+    for (const segment of segments) expect(segment).not.toHaveProperty("location");
+    expect(JSON.stringify(structured).length).toBeLessThan(text.length + 1_500);
   });
 
   it("passes small content through without a footer", async () => {
@@ -121,6 +130,7 @@ describe("retrieve_context", () => {
     expect(segment.isError).toBeUndefined();
     expect(segment.content[0]?.text).toContain("GET /health 200 2ms");
     expect(segment.structuredContent).toMatchObject({ status: "OK", contextId, truncated: false });
+    expect(segment.structuredContent?.content).toBe(segment.content[0]?.text);
 
     const full = await call("retrieve_context", { contextId });
     expect(full.content[0]?.text).toBe(log);

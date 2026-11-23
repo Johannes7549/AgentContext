@@ -2,8 +2,6 @@ import {
   CompressionOptionsSchema,
   type CompressionResult,
   ContentTypeSchema,
-  OmittedSegmentSchema,
-  TokenizerInfoSchema,
   WarningSchema,
 } from "@agentcontext/shared";
 import * as z from "zod";
@@ -34,7 +32,23 @@ const InputSchema = z.object({
   options: CompressionOptionsSchema.optional(),
 });
 
+/** Omitted segment as shown to the model: compact; exact locations stay available via retrieval. */
+const SegmentSummarySchema = z.object({
+  id: z.string(),
+  type: z.string(),
+  reason: z.string(),
+  recoverable: z.boolean(),
+  occurrences: z.number().optional(),
+  note: z.string().optional(),
+});
+
+/**
+ * Structured result. Some clients (including Claude Code) show the model only
+ * `structuredContent` when present, so it carries the content itself first,
+ * followed by compact metadata.
+ */
 export const OptimizeOutputSchema = z.object({
+  content: z.string(),
   contextId: z.string().nullable(),
   recoveryAvailable: z.boolean(),
   strategy: z.string(),
@@ -44,11 +58,10 @@ export const OptimizeOutputSchema = z.object({
     savedTokens: z.number(),
     reductionPercentage: z.number(),
     tokenCountIsExact: z.boolean(),
-    tokenizer: TokenizerInfoSchema,
-    processingTimeMs: z.number(),
   }),
-  omittedSegments: z.array(OmittedSegmentSchema),
+  omittedSegments: z.array(SegmentSummarySchema),
   warnings: z.array(WarningSchema),
+  recoveryHint: z.string().optional(),
 });
 
 export const registerOptimizeContext: Registrar = (server, runtime) => {
@@ -82,22 +95,51 @@ export const registerOptimizeContext: Registrar = (server, runtime) => {
 };
 
 /**
- * Text block: the (possibly) optimized content followed by a short footer with
- * recovery instructions. Structured content: metadata only — the content is
- * not duplicated there so it reaches the model once.
+ * Text block: the optimized content followed by a short footer. Structured
+ * content: the same content plus compact metadata (clients show one or the
+ * other; Claude Code shows the structured form).
  */
 export function formatOptimizeResult(result: CompressionResult): ToolResult {
   const body = typeof result.content === "string" ? result.content : JSON.stringify(result.content);
   const footer = optimizeFooter(result);
+  const m = result.metrics;
   return {
-    content: [{ type: "text", text: footer ? `${body}\n${footer}` : body }],
+    content: [
+      {
+        type: "text",
+        text: footer
+          ? `${body}
+${footer}`
+          : body,
+      },
+    ],
     structuredContent: {
+      content: body,
       contextId: result.contextId,
       recoveryAvailable: result.recoveryAvailable,
       strategy: result.strategy,
-      metrics: result.metrics,
-      omittedSegments: result.omittedSegments,
+      metrics: {
+        originalTokens: m.originalTokens,
+        optimizedTokens: m.optimizedTokens,
+        savedTokens: m.savedTokens,
+        reductionPercentage: m.reductionPercentage,
+        tokenCountIsExact: m.tokenCountIsExact,
+      },
+      omittedSegments: result.omittedSegments.map((s) => ({
+        id: s.id,
+        type: s.type,
+        reason: s.reason,
+        recoverable: s.recoverable,
+        ...(s.occurrences !== undefined ? { occurrences: s.occurrences } : {}),
+        ...(s.note !== undefined ? { note: s.note } : {}),
+      })),
       warnings: result.warnings,
+      ...(result.recoveryAvailable && result.contextId && result.omittedSegments.length > 0
+        ? {
+            recoveryHint:
+              'Call retrieve_context with this contextId and selector {"type":"segment_id","value":"sN"} for a marker, or no selector for the full original.',
+          }
+        : {}),
     },
   };
 }

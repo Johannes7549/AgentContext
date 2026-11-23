@@ -1,9 +1,11 @@
 # MCP tools reference
 
 AgentContext exposes these tools over stdio. Every tool returns a text block
-for the model and `structuredContent` with metadata (validated against an
-output schema). Errors are tool results with `isError: true` and a text of the
-form `CODE: message`; they never contain raw content.
+and `structuredContent` (validated against an output schema). Both carry the
+returned content, because clients differ in which one they show the model —
+Claude Code, for example, shows only `structuredContent`. Errors are tool
+results with `isError: true` and a text of the form `CODE: message`; they never
+contain raw content.
 
 ## `optimize_context`
 
@@ -33,8 +35,11 @@ Compress text and store the original for recovery.
 
 Text result: the optimized content, then a footer starting with `---` that
 names the strategy, token counts (labelled *estimated*), how to recover, and
-any warnings. Structured result: `contextId`, `recoveryAvailable`, `strategy`,
-`metrics`, `omittedSegments`, `warnings`.
+any warnings. Structured result: `content` (the optimized content),
+`contextId`, `recoveryAvailable`, `strategy`, `metrics` (token counts),
+`omittedSegments` (compact: id, type, reason, recoverable, occurrences, note —
+exact locations are available from the metadata resource and via retrieval),
+`warnings`, and a `recoveryHint` when parts can be recovered.
 
 ## `retrieve_context`
 

@@ -25,7 +25,9 @@ const InputSchema = z.object({
   maxTokens: z.number().int().positive().optional(),
 });
 
+/** Carries the recovered text itself: some clients (Claude Code) show only structuredContent. */
 const OutputSchema = z.object({
+  content: z.string(),
   status: z.literal("OK"),
   contextId: z.string(),
   truncated: z.boolean(),
@@ -77,6 +79,7 @@ export function formatRetrieveResult(result: RetrievalResult): ToolResult {
   return {
     content: [{ type: "text", text: `${result.content}${note}` }],
     structuredContent: {
+      content: result.truncated ? `${result.content}${note}` : result.content,
       status: "OK",
       contextId: result.contextId,
       truncated: result.truncated,
