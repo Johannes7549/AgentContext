@@ -1,7 +1,7 @@
 {
   "tool": "agentcontext",
   "version": "0.1.0",
-  "generatedAt": "2026-11-22T22:35:43.051Z",
+  "generatedAt": "2026-11-23T09:28:21.554Z",
   "environment": {
     "node": "v26.13.1",
     "platform": "win32",
@@ -62,7 +62,7 @@
       "unrecoverable": 0,
       "warnings": [],
       "latencyMs": {
-        "p50": 9.8,
+        "p50": 10.8,
         "p95": 28.7,
         "samples": 10
       }
@@ -119,8 +119,8 @@
       "unrecoverable": 0,
       "warnings": [],
       "latencyMs": {
-        "p50": 8,
-        "p95": 10.9,
+        "p50": 8.6,
+        "p95": 11.2,
         "samples": 10
       }
     },
@@ -152,8 +152,8 @@
       "unrecoverable": 0,
       "warnings": [],
       "latencyMs": {
-        "p50": 25.4,
-        "p95": 40.6,
+        "p50": 25.2,
+        "p95": 42.1,
         "samples": 10
       }
     },
@@ -229,8 +229,8 @@
       "unrecoverable": 0,
       "warnings": [],
       "latencyMs": {
-        "p50": 1.6,
-        "p95": 2.3,
+        "p50": 1.7,
+        "p95": 2.6,
         "samples": 10
       }
     },
@@ -266,8 +266,8 @@
       "unrecoverable": 0,
       "warnings": [],
       "latencyMs": {
-        "p50": 3,
-        "p95": 5.6,
+        "p50": 3.2,
+        "p95": 5.5,
         "samples": 10
       }
     },
@@ -303,8 +303,8 @@
       "unrecoverable": 0,
       "warnings": [],
       "latencyMs": {
-        "p50": 2.5,
-        "p95": 3.7,
+        "p50": 2.4,
+        "p95": 6.1,
         "samples": 10
       }
     },
@@ -345,7 +345,7 @@
       "warnings": [],
       "latencyMs": {
         "p50": 1.8,
-        "p95": 3,
+        "p95": 3.9,
         "samples": 10
       }
     }
@@ -358,8 +358,8 @@
     "recoveryIntegrityPct": 100,
     "unrecoverableOmissions": 0,
     "latencyMs": {
-      "p50": 3,
-      "p95": 40.6
+      "p50": 3.2,
+      "p95": 42.1
     }
   },
   "targets": [

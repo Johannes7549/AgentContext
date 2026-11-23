@@ -1,6 +1,6 @@
 {
   "name": "@agentcontext/mcp-server",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "AgentContext MCP server: reversible context optimization for AI agents (stdio)",
   "license": "Apache-2.0",
   "keywords": [

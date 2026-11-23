@@ -1,6 +1,6 @@
 {
   "name": "@agentcontext/tokenization",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Token counting adapters and the deterministic estimator for AgentContext",
   "license": "Apache-2.0",
   "keywords": [

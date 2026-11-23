@@ -1,6 +1,6 @@
 {
   "name": "@agentcontext/strategies",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Deterministic, reversible compression strategies for AgentContext",
   "license": "Apache-2.0",
   "keywords": [

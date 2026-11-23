@@ -1,6 +1,6 @@
 {
   "name": "@agentcontext/storage",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Local SQLite + blob storage for AgentContext originals",
   "license": "Apache-2.0",
   "keywords": [
